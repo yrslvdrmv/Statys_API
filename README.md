@@ -5,7 +5,7 @@
 # Article1
 
 Data | Made by | Changes
------------- | -------------
+------------ | ------------- | -------------
 October 1, 2021 | Yaroslav Dromov | 123
 
 
