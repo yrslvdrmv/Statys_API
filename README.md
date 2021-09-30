@@ -24,8 +24,7 @@ GET: https://.../api/v1/websites/products
 web site authentication: HTTP header request must have a custom parameter: 
 x-API-key=' <key given to client>'
 
-### INPUT JSON Sample:
-<details><summary>Code</summary>
+<details><summary>**INPUT JSON Sample:**</summary>
 <p>
 	
 ```json
