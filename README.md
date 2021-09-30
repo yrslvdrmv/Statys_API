@@ -30,7 +30,7 @@ Content in the first column | Content in the second column
 
 
 
-<details><summary>CLICK ME</summary>
+<details><summary>INPUT JSON Sample:</summary>
 <p>
 
 #### yes, even hidden code blocks!
