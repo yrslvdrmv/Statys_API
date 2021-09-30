@@ -35,88 +35,80 @@ October 1, 2021 | Yaroslav Dromov |
 
 #### yes, even hidden code blocks!
 ```json
-  {
-"order_header": {
-        		"website_order_id": "web_001",
-       		 "order_date": "2021-03-12",
-       		 "shipping_total": 35.56,
-        		"shipping_tax": null,
-        		"cart_tax": null,
-        		"total": 540.12,
-        		"total_tax": null,
-        		"prices_include_tax": true,
-        		"currency": "USD",
-        		"customer_note": null,
-		"is_paid": false,
-    		},
-    "discounts": {
-        		"discount_total": 200.0,
-        		"discount_tax": null
-    		},
-    "buyer": {
-        "buyer_account_id": 100110,
-        "buyer_ip_address": "192.168.1.1",
-        "buyer_license" : {
-    		"license_name": "567-09977"
-    		"license_expiry_date": "",
-		"title": "Dr.",
-    		"first_name": "Joe",
-    		"middle_name": "",
-    		"last_name": "Doe",
-		"state": "Nevada",
- 		"country": "US",
-		"profession": "General practitioner",
-		"specialty": "Family doctor"
-	           },
-    "buyer_address": {
-    		"title": null,
-        		"first_name": "John",
-        		"middle_name": null,
-        		"last_name": "Smith",
-        		"company": "John Smith",
-        		"address_1": "1 some street",
-        		"address_2": null,
-        		"city": "New York",
-        		"state": "New York",
-        		"postcode": "10033",
-        		"country": "US",
-        		"phone_number_1": "555-555-55-55",
-        		"phone_number_2": null,
-        		"email": "something@gmail.com"
-		}
-    },
-    "shipping": {
-        		"title": null,
-        		"first_name": "John",
-        		"middle_name": null,
-        		"last_name": "Smith",
-        		"company": "John Smith",
-        		"address_1": "1 some street",
-        		"address_2": null,
-        		"city": "New York",
-        		"state": "New York",
-        		"postcode": "10033",
-        		"country": "US",
-        		"phone_number_1": "555-555-55-55",
-        		"phone_number_2": null,
-        		"email": "something@gmail.com"
-   		},
-    "payment_details": {
-        		"payment_transaction_id": "payment001",
-       		"payment_token": "card001",
-        		"payment_method_type": "CC",
-        		"payment_method_description": "4156 78XX XXXX 0019",
-		"payment_mid": 10928
-    		},
-    "line_items": [
-            		{
-                	"product_id": 123,
-                	"quantity": 10,
-                	"price": 12.20,
-                	"total": 122.00,
-                	"total_tax": null
-            		}
-        	]
+{
+"products":
+  [
+    {
+      "product_data": 
+          {
+          "product_id": {"type": "integer"},
+          "product_name": {"type": "string", "maxlength": 128},
+          "product_short_description": {"type": "string", "maxlength": 512},
+          "product_long_description": {"type": "string", "maxlength": 1024},
+          "product_sku": {"type": "string", "maxlength": 128},
+          "product_weight": {"type": "number"},
+          "product_weight_uom": {"type": "string", "maxlength": 32},
+          "product_length": {"type": "number"},
+          "product_width": {"type": "number"},
+          "product_height": {"type": "number"},
+          "product_lwh_uom": {"type": "string","maxlength": 32},
+          "dosage_value": {"type": "string", "maxlength": 256},
+          "dosage_type": {"type": "string", "maxlength": 32},
+          "items_in_pack": {"type": "string", "maxlength": 128},
+          "pack_type": {"type": "string", "maxlength": 32},
+          "brand_name": {"type": "string", "maxlength": 32}
+          }
+      "product_category": 
+ 		  {
+			"is_cold": {"type": "boolean"},
+			"type": {"type": "string", "maxlength": 32} /"pharma"|"med_device"/
+		  },
+   "msrp_price_and_availability": 
+
+ 		  {
+			"availability": {"type": "string", "maxlength": 32} /"Backorder"|"Low"|"Medium"|"High"/
+			"msrp_price": {"type": "number"},
+			"currency": {"type": "string", "maxlength": 3}, /"USD"/
+			"is_license_required": {"type": "boolean"}  
+		  }
+	   }
+	]
+}
+
+OUTPUT JSON Sample:
+{
+    "products": [
+        {
+            "product_data": {
+                "product_id": 110,
+                "product_name": "Some Product",
+                "product_short_description": "Short Product Description",
+                "product_long_description": "Long Product Description",
+                "product_sku": "SAMPLE-SKU",
+                "product_weight": 4.5,
+                "product_weight_uom": "kg",
+                "product_length": 20,
+                "product_width": 30,
+                "product_height": 15,
+                "product_lwh_uom": "cm",
+                "dosage_value": "0.5",
+                "dosage_type": "ml",
+                "items_in_pack": "1",
+                "pack_type": "pre-filled syringe(s)",
+                "brand_name": "Sample Brand"
+            },
+            "product_category": {
+                "is_cold": true,
+                "type": "pharma"
+            },
+            "msrp_price_and_availability": {
+                "availability": "Medium",
+                "msrp_price": 140.50,
+                "currency": "USD",
+                "is_license_required": true
+            }
+        }
+    ]
 }
 ```
 ```python
