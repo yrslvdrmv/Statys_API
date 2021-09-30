@@ -34,7 +34,7 @@ Content in the first column | Content in the second column
 <p>
 
 #### yes, even hidden code blocks!
-'''
+'''json
   {
 "order_header": {
         		"website_order_id": "web_001",
