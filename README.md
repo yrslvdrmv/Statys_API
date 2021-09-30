@@ -6,7 +6,7 @@
 
 Data | Made by | Changes
 ------------ | ------------- | -------------
-October 1, 2021 | Yaroslav Dromov | 123
+October 1, 2021 | Yaroslav Dromov | Blablablablablablablablablablablablabla
 
 
 ## B
