@@ -27,3 +27,17 @@ Content in the first column | Content in the second column
 - [Testing](#4-testing)
 
 ## 1. Overview
+
+
+
+<details><summary>CLICK ME</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
