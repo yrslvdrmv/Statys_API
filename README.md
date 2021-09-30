@@ -25,7 +25,7 @@ ENDPOINT:
 [https://.../api/v1/websites/products]: link
 
 web site authentication: HTTP header request must have a custom parameter: 
-x-API-key=' <key given to client>'
+[x-API-key=' <key given to client>']
 
 <details><summary><b>INPUT JSON Sample:</b></summary>
 <p>
