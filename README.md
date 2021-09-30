@@ -25,7 +25,7 @@ web site authentication: HTTP header request must have a custom parameter:
 x-API-key=' <key given to client>'
 
 
-<details><summary>INPUT JSON Sample:</summary>
+<details><summary>###INPUT JSON Sample:</summary>
 <p>
 	
 ```json
