@@ -1,6 +1,6 @@
 # first_repo
 
-- [Article] (#1-art)
+- [Article](#1-art)
 
 # A
 
