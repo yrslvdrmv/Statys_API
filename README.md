@@ -27,6 +27,7 @@ x-API-key=' <key given to client>'
 
 <details><summary>INPUT JSON Sample:</summary>
 <p>
+	
 ```json
 {
 "products":
@@ -103,9 +104,6 @@ OUTPUT JSON Sample:
         }
     ]
 }
-```
-```python
-print("hello world!")
 ```
 
 </p>
