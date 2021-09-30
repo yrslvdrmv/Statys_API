@@ -4,10 +4,10 @@
 
 # Article1
 
-First Header | Second Header
+Data| Made by | Changes
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+October 1, 2021 | Yaroslav Dromov |
+
 
 ## B
 
