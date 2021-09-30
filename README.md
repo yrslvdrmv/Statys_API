@@ -18,8 +18,7 @@ Data | Made by | Changes
 October 1, 2021 | Yaroslav Dromov | Blablablablablablablablablablablablabla
 
 
-ENDPOINT:
-
+#### ENDPOINT:
 
 [GET:]: 
 [https://.../api/v1/websites/products]: link
