@@ -78,12 +78,10 @@ web site authentication: HTTP header request must have a custom parameter:
 
 #### API call
 
-[POST]
+<b>[POST]<\b>
 ```
 https://fs6wjwxd00.execute-api.us-east-1.amazonaws.com/test/api/v1/orders?buyer={buyer information}&billing_address={billing address}&shipping_address={shipping_address}&basket={basket}&payment_info={payment}
 ```
-
-To get access to current weather, minute forecast for 1 hour, hourly forecast for 48 hours, daily forecast for 7 days and government weather alerts, please use this section of the documentation.
 
 If you are interested in historical weather data, please read the "Historical weather data" section
 
