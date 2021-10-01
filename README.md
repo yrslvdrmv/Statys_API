@@ -4,8 +4,7 @@
 
 * [Changes control](#сhanges-control)
 
-Changes control
-==============
+## Changes control
 
 Data | Made by | Changes
 ------------ | ------------- | -------------
