@@ -139,10 +139,9 @@ Statys Marketplace will not accept new non-paid orders, i.e., payment must be ma
 
 #### INPUT JSON Key fields explanation:	
 
-##### order_header section
-	
-Property name | Value | Description
------------- | ------------- | -------------
+	order_header section
+R/O | Property name | Value | Description
+------------ | ------------- | ------------- | -------------
 R |	`website_order_id` | integer |	Order ID how it was created/registered on the website. 
 R |	`order_date` |	timestamp |	Date and time, the order was created on the website.
 O |	`shipping_total` | number | The total amount a website charged for shipping all items in the order.
@@ -154,8 +153,8 @@ O |	`prices_include_tax` |	boolean |	The grand total of the order, including tax
 R |	`currency` |	string |	Currency code for currency an order was processed in.
 O |	`customer_note` |	string |	Any note for the order a website wants to be attached. It may have an explanation of the discount provided, special delivery instructions, etc.
 R |	`Is_paid` |	boolean |	Default to false reflecting the order payment to be captured by OMS. If the order was prepaid on the website, the value should be true. In this case the payment information object is optional;
-	
-	
+
+
 	discounts section
 R	discount_total	number	The total amount is given as a discount for the whole order.
 O	discount_tax	number	Taxes are matching the discount amount.
