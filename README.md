@@ -27,11 +27,11 @@ Below are the API methods for order processing by the Marketplace:
 ### Create new order
 
 The API for a new order requires:
-** the buyer information, 
-b) billing address 
-c) shipping address, 
-d) shopping basket and 
-e) payment information. 
+* the buyer information, 
+* billing address 
+* shipping address, 
+* shopping basket and 
+* payment information. 
 
 It is assumed that before order submission, the website has identified a buyer and checked the license if the requested product requires such license in the buyer's (shipping address) jurisdiction. 
 
