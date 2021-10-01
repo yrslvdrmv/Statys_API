@@ -3,6 +3,8 @@
 ## Table of contents
 
 * [Changes control](#сhanges-control)
+* [Summary](#summary)
+* [General considerations](#general_consideretion)
 
 ## Changes control
 
