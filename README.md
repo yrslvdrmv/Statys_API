@@ -211,7 +211,7 @@ O	total_tax	money	Total tax charged for the item.
 </p>
 </details>
 
-<details><summary><b>Example response 200:</b></summary>
+<details><summary><b>Response JSON example(request status 200):</b></summary>
 <p>
 	
 ```json
