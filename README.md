@@ -30,6 +30,13 @@ The current revision described below provides:
 General considerations
 ----------------------
 
+* All products returned in the product list are available for sale.
+* Submitted orders must include references to product list items by the product ID and provide the buyer details, including licenses where needed and payment information.
+* The order status API provides information on parcels shipped for all the buyer's orders identified by Statys buyer account ID. Until the Marketplace's internal system ships a parcel, the API returns the empty parcel section.
+* The current version of API uses English only.
+* If the optional information is not available, the sender should skip the particular element in the request. The validation does not support the NULL value in the fields. 
+
+
 Security
 --------
 
