@@ -36,6 +36,8 @@ Security
 Error hendling
 --------------
 
+	Hypertext Transfer Protocol (HTTP) Status Code Registry
+
 Value | Description | Reference
 ------------ | ------------- | -------------
 `403` | Forbiden | https://www.rfc-editor.org/rfc/rfc7231.html
