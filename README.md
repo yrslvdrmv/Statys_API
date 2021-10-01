@@ -115,7 +115,8 @@ web site authentication: HTTP header request must have a custom parameter:
     ]
 }
 ```
-
+</p>
+</details>
 
 Property name | Value | Description
 ------------ | ------------- | -------------
