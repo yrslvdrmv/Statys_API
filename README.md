@@ -7,7 +7,7 @@
 * [Summary](#summary)
 * [Authentication and Security](#Authentication-and-Security)
 * [General considerations](#general-considerations)
-* [Error handling](#error-hendling)
+* [Error handling](#error-handling)
 * [API](#api)
 
 Changes control
@@ -52,7 +52,7 @@ General considerations
 * The current version of API uses English only.
 * If the optional information is not available, the sender should skip the particular element in the request. The validation does not support the NULL value in the fields. 
 
-Error hendling
+Error handling
 --------------
 
 	Hypertext Transfer Protocol (HTTP) Status Code Registry
