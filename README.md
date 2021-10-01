@@ -13,7 +13,7 @@ Data | Made by | Changes
 October 1, 2021 | `Yaroslav Dromov` | Blablablablablablablablablablablablabla
 
 Summary
-======
+------
 
 The document describes how a website can integrate with the Statys Business services marketplace. The API provides integration capability for new or existing websites to add Statys Business services products to their catalog and submit orders to and check order status from the Statys Order Management System (OMS).
 
