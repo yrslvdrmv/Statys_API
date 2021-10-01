@@ -11,8 +11,15 @@
 * [API](#api)
 	* [Create new order](#create-new-order)
 	* [Retrieve the status of the order](#retrieve-the-status-of-the-order)
+	* [Confirm product availability](#confirm-product-availability)
+	* [Merchant ID](#merchant_id)
+	* [Payment methods](#payment_methods)
 
 
+
+
+
+* [Appendix 1](#apendix_1)
 
 Changes control
 ---------------
