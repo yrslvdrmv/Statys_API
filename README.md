@@ -144,8 +144,11 @@ R |	`state` | string | If applicable – state or another administrative region 
 	country string ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 O |	`profession` | string | The license owner occupation i.e. “Medical doctor”.
 O |	`specialty` | string | The license owner specialty i.e. “Family doctor”.
-	The buyer address section has the same fields and requirements as the shipping address section below. It is required.
-	The shipping address section is required.
+```
+The buyer address section has the same fields and requirements as the shipping address section below. It is required. The shipping address section is required.
+```
+R/O | Property name | Value | Description
+------------ | ------------- | ------------- | -------------
 O |	`title` | text | Title abbreviation a buyer would like to be addressed: "Dr"," Mrs"," Sir".
 R |	`first_name` | text |	First name of a person indicated as shipment receiver.
 O |	`middle_name` | text |	The middle name of a person indicated as shipment receiver. It can be NULL.
@@ -155,27 +158,32 @@ R |	`address_1` | text | The first line of the address. It is typically building
 O |	`address_2` | text | The second line of address if the first line is not enough. It can be NULL.
 R |	`city	text` | City a shipment to be sent to.
 R |	`state	text` | If applicable – state or another administrative region within a country like "province", "canton". Required for the USA and Canada
-	`postcode` | text | Postal code of shipping destination.
+	postcode text Postal code of shipping destination.
 R	`country` | char(2) | ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-
-R |	phone_number_1	Text	First phone number of shipping destination contact in free form prefixed by country code: 
+R |	phone_number_1 | Text |	First phone number of shipping destination contact in free form prefixed by country code: 
 +1 416-123-4567. It can be NULL.
-O |	phone_number_2	text	Second phone number of shipping destination contact in free form prefixed by country code: 
+O |	phone_number_2 | text | Second phone number of shipping destination contact in free form prefixed by country code: 
 +1 416-123-4567. It can be NULL.
-R |	email	text	E-mail address of a buyer. It can be NULL.
-	payment_details section is required if the is_paid flag set to FALSE.
-R |	payment_transaction_id	string	Payment transaction ID returned by the payment processor.
-O |	payment_method_description	string	Payment transaction details returned by the payment provider.
-R |	payment_method_type	string	In the current API version, it is "CC" - credit card only.
-O |	payment_token	string	Payment token returned by Payment provider masking buyer's credit card information. It may be NULL.
+R |	email | text | E-mail address of a buyer. It can be NULL.
+```
+payment_details section is required if the is_paid flag set to FALSE.
+```
+R/O | Property name | Value | Description
+------------ | ------------- | ------------- | -------------
+R |	payment_transaction_id | string | Payment transaction ID returned by the payment processor.
+O |	payment_method_description | string | Payment transaction details returned by the payment provider.
+R |	payment_method_type | string | In the current API version, it is "CC" - credit card only.
+O |	payment_token | string | Payment token returned by Payment provider masking buyer's credit card information. It may be NULL.
 Payment token allows to "pay with the Credit card used last time".
-R |	Payment_mid	integer	This is the Merchant MID used by the website while processing the order payment;
-	line_items section. At least one order line must be provided.
-R |	product_id	integer	Product ID as per Statys Marketplace Product List.
-R |	quantity	integer	The number of units of the product.
-R |	price	money	Price a unit was actually sold by the website. (Do not mix with MSRP product price!)
-R |	total	money	The total price paid for the item. The total price may include a discount and not be equal quantity * price.
-O |	total_tax	money	Total tax charged for the item.
+R |	Payment_mid | integer | This is the Merchant MID used by the website while processing the order payment;
+```
+line_items section. At least one order line must be provided.
+```
+R |	product_id | integer | Product ID as per Statys Marketplace Product List.
+R |	quantity | integer | The number of units of the product.
+R |	price | money | Price a unit was actually sold by the website. (Do not mix with MSRP product price!)
+R |	total | money | The total price paid for the item. The total price may include a discount and not be equal quantity * price.
+O |	total_tax | money | Total tax charged for the item.
 
 
 <details><summary><b>Request JSON example:</b></summary>
