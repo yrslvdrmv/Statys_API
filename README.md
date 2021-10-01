@@ -37,7 +37,7 @@ Error hendling
 --------------
 
 * Incorrect website key 
-**	HTTP Code 403 
+   * HTTP Code 403 
 o	{"message": "Forbidden"} 
 •	Incorrect JSON structure 
 o	HTTP Code 400 
