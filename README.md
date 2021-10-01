@@ -157,7 +157,7 @@ R |	`address_1` | text | The first line of the address. It is typically building
 O |	`address_2` | text | The second line of address if the first line is not enough. It can be NULL.
 R |	`city` | text | City a shipment to be sent to.
 R |	`state`	| text | If applicable – state or another administrative region within a country like "province", "canton". Required for the USA and Canada postcode text Postal code of shipping destination.
-R	`country` | char(2) | ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+R | 	`country` | char(2) | ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 R |	`phone_number_1` | Text | First phone number of shipping destination contact in free form prefixed by country code: +1 416-123-4567. It can be NULL.
 O |	`phone_number_2` | text | Second phone number of shipping destination contact in free form prefixed by country code:  +1 416-123-4567. It can be NULL.
 R |	`email` | text | E-mail address of a buyer. It can be NULL.
