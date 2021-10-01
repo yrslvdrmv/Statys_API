@@ -12,7 +12,7 @@ Data | Made by | Changes
 ------------ | ------------- | -------------
 October 1, 2021 | `Yaroslav Dromov` | Blablablablablablablablablablablablabla
 
-## Methods
+
 
 ## ORDER API
 
@@ -140,3 +140,5 @@ Property name | Value | Description
 ------------ | ------------- | -------------
 `website_order_id` | integer | Order ID how it was created/registered on the website.
 `order_date` | timestamp | Date and time, the order was created on the website.	
+
+## Methods
