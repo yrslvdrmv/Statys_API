@@ -7,7 +7,7 @@
 * [Authentication and Security](#Authentication-and-Security)
 * [General considerations](#general-considerations)
 * [Error handling](#error-hendling)
-* [API](#api)
+* [Orders](#orders)
 
 Changes control
 ---------------
@@ -59,7 +59,7 @@ Value | Description | Reference
 `500` | Forbiden | https://www.rfc-editor.org/rfc/rfc7231.html
 
 
-API
+Orders
 ---
 
 Below are the API methods for order processing by the Marketplace:
