@@ -174,6 +174,8 @@ R |	`Payment_mid` | integer | This is the Merchant MID used by the website while
 ```
 line_items section. At least one order line must be provided.
 ```
+R/O | Property name | Value | Description
+------------ | ------------- | ------------- | -------------
 R |	`product_id` | integer | Product ID as per Statys Marketplace Product List.
 R |	`quantity` | integer | The number of units of the product.
 R |	`price` | money | Price a unit was actually sold by the website. (Do not mix with MSRP product price!)
