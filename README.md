@@ -21,7 +21,8 @@ October 1, 2021 | Yaroslav Dromov | Blablablablablablablablablablablablabla
 #### ENDPOINT:
 
 [GET:]: 
-[https://.../api/v1/websites/products]: link
+
+https://.../api/v1/websites/products
 
 web site authentication: HTTP header request must have a custom parameter: 
 [x-API-key=' <key given to client>']
