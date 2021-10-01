@@ -37,6 +37,8 @@ The API for a new order requires:
 
 Statys Marketplace will not accept new non-paid orders, i.e., payment must be made and money received. It is possible to submit an order with payment made but not completed yet. This may happen if the payment processor requires more time. If the payment doesn't go through, the order will be declined.`
 
+`1232`
+
 
 #### ENDPOINT:
 
