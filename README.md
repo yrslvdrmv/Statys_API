@@ -55,7 +55,10 @@ Error hendling
 
 Value | Description | Reference
 ------------ | ------------- | -------------
+`400` | Bad Request | https://www.rfc-editor.org/rfc/rfc7231.html
+`400` | Bad Request | https://www.rfc-editor.org/rfc/rfc7231.html
 `403` | Forbiden | https://www.rfc-editor.org/rfc/rfc7231.html
+`500` | Forbiden | https://www.rfc-editor.org/rfc/rfc7231.html
 
 
 API
