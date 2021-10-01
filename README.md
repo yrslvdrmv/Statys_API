@@ -4,8 +4,8 @@
 
 * [Changes control](#сhanges-control)
 * [Summary](#summary)
+* [Authentication / Security](#Authentication_Security)
 * [General considerations](#general-considerations)
-* [Security](#security)
 * [Error handling](#error-hendling)
 * [API](#api)
 
@@ -27,17 +27,7 @@ The current revision described below provides:
 - Retrieve parcel tracking for buyer's ALL previously submitted orders.
 - API to confirm product availability
 
-General considerations
-----------------------
-
-* All products returned in the product list are available for sale.
-* Submitted orders must include references to product list items by the product ID and provide the buyer details, including licenses where needed and payment information.
-* The order status API provides information on parcels shipped for all the buyer's orders identified by Statys buyer account ID. Until the Marketplace's internal system ships a parcel, the API returns the empty parcel section.
-* The current version of API uses English only.
-* If the optional information is not available, the sender should skip the particular element in the request. The validation does not support the NULL value in the fields. 
-
-
-Security
+Authentication / Security
 --------
 
 * The website making an API call identifies itself to the Marketplace by a token submitted in the API request HTTP header. The token will be provided by OMS Business Admin to the participating site owner (webmaster) for each website individually during the onboarding process. The token is valid indefinitely unless a website owner has requested a replacement or advised to be replaced by the Marketplace.
@@ -47,6 +37,14 @@ x-API-key=' <token provided to website>'
 ```
 * Security requirements must be observed in every API call.
 
+General considerations
+----------------------
+
+* All products returned in the product list are available for sale.
+* Submitted orders must include references to product list items by the product ID and provide the buyer details, including licenses where needed and payment information.
+* The order status API provides information on parcels shipped for all the buyer's orders identified by Statys buyer account ID. Until the Marketplace's internal system ships a parcel, the API returns the empty parcel section.
+* The current version of API uses English only.
+* If the optional information is not available, the sender should skip the particular element in the request. The validation does not support the NULL value in the fields. 
 
 Error hendling
 --------------
