@@ -12,6 +12,8 @@ Data | Made by | Changes
 ------------ | ------------- | -------------
 October 1, 2021 | `Yaroslav Dromov` | Blablablablablablablablablablablablabla
 
+## Methods
+
 ## ORDER API
 
 Below are the API methods for order processing by the Marketplace:
