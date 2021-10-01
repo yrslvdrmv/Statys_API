@@ -72,7 +72,7 @@ Publishes an order in system.
 
 #### Auth
 
-Web site authentication: HTTP header request must have a custom parameter: 
+HTTP header request must have a custom parameter: 
 ```
 [x-API-key=' <key given to client>']
 ```
