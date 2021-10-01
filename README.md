@@ -68,7 +68,13 @@ Below are the API methods for order processing by the Marketplace:
 - Retrieve order status
 
 ### Create new order
-[POST] /page/{buyer}, {billing_address}, [shipping_address}, {basket}, {payment_info}
+
+#### API call
+
+[POST]
+```
+https://fs6wjwxd00.execute-api.us-east-1.amazonaws.com/test/api/v1/orders?buyer={buyer information}&billing_address={billing address}&shipping_address={shipping_address}&basket={basket}&payment_info={payment}
+```
 
 To get access to current weather, minute forecast for 1 hour, hourly forecast for 48 hours, daily forecast for 7 days and government weather alerts, please use this section of the documentation.
 
