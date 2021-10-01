@@ -241,11 +241,7 @@ R/O | Property name | Value | Description
 ------------ | ------------- | ------------- | -------------
 R | `order_id` | integer | Order ID assigned by Statys Marketplace to submitted order. It will be used in subsequent communications as a reference.
 R | `buyer_account_id` | integer | The ID of a Buyer from StatysMarketplace. The buyer account ID is created on Statys side and has to be used in further inquiries. In response to a brand new account order with buyer_account_id= "0", Statys returns the account number created for this buyer. In case it is found to be existing (found by name and address), Statys returns the existing account ID. Even if the buyer account is presented by web site as new, Statys will attempt to match account data (billing address details) with the existing account, and if the credible match is made, the existing buyer account id will be returned.
-R | `order_status_cd` | string | Possible returned values:
-"Created"
-"Pending", pending issues resolution like license confirmation, etc.
-"Confirmed"
-"Cancelled".
+R | `order_status_cd` | string | Possible returned values: "Created", "Pending", pending issues resolution like license confirmation, etc., "Confirmed" , "Cancelled".
 
 This version of API does not have order adjustment or cancellation endpoints. After submission, all changes must be done through a call to a CSR.
 
