@@ -127,16 +127,20 @@ buyer section
 ```
 R/O | Property name | Value | Description
 ------------ | ------------- | ------------- | -------------
-R |	buyer_account_id	integer	Buyer account ID. If the buyer is brand new, set this value to 0. Buyer account ID is created on Statys side and has to be used in further inquiries. In response to the new account "0", Statys returns the account number created for this buyer. In case a "new" account is found to be existing (found by name and address), Statys returns the existing account ID.
-R |	buyer_ip_address	string	An IP address a buyer contacted web site from.
-	The medical license section: optional. 
-R |	license_name	string	License Name. It may be a license number.
-R |	license_expiry_date	date	YYYY-MM-DD format, a date doctor's license expires
-O |	title	string	The medical license owner title 
-R |	first_name	string	The medical license owner first name
-O |	middle_name	string	The medical license owner middle name
-R |	last_name	string	The medical license owner last name
-R |	state	string	If applicable – state or another administrative region within a country like "province", "canton". *Required for the USA and Canada
+R |	buyer_account_id | integer | Buyer account ID. If the buyer is brand new, set this value to 0. Buyer account ID is created on Statys side and has to be used in further inquiries. In response to the new account "0", Statys returns the account number created for this buyer. In case a "new" account is found to be existing (found by name and address), Statys returns the existing account ID.
+R | buyer_ip_address | string | An IP address a buyer contacted web site from.
+```
+The medical license section: optional.
+```
+R/O | Property name | Value | Description
+------------ | ------------- | ------------- | -------------
+R |	license_name | string | License Name. It may be a license number.
+R |	license_expiry_date | date | YYYY-MM-DD format, a date doctor's license expires
+O |	title | string | The medical license owner title 
+R |	first_name | string | The medical license owner first name
+O |	middle_name | string | The medical license owner middle name
+R |	last_name | string | The medical license owner last name
+R |	state | string | If applicable – state or another administrative region within a country like "province", "canton". *Required for the USA and Canada
 	country	string	ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
 O |	profession	string	The license owner occupation i.e. “Medical doctor”.
