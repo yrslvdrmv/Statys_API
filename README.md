@@ -63,8 +63,9 @@ Orders
 ---
 
 ### Create new order
-Create a new order 
 <b>[POST]</b> 
+
+Create a new order 
 
 #### Auth
 ```
