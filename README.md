@@ -9,7 +9,7 @@
 * [General considerations](#general-considerations)
 * [Error handling](#error-handling)
 * [API](#api)
-	* [Create new order](#create_new_order)
+	* [Create new order](#create-new-order)
 
 Changes control
 ---------------
