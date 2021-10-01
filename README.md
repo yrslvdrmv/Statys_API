@@ -70,11 +70,15 @@ web site authentication: HTTP header request must have a custom parameter:
 	]
 }
 ```
+	
 </p>
 </details>
 
+<details><summary><b>OUTPUT JSON Sample:</b></summary>
+<p>
+	
+```json
 
-OUTPUT JSON Sample:
 {
     "products": [
         {
@@ -109,3 +113,4 @@ OUTPUT JSON Sample:
         }
     ]
 }
+```
