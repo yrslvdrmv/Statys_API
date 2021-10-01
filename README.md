@@ -290,7 +290,7 @@ This version of API does not have order adjustment or cancellation endpoints. Af
 </p>
 </details>
 
-[Table contents](#table-contents)
+[Table of contents](#table-of-contents)
 
 
 
