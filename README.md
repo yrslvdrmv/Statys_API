@@ -3,6 +3,7 @@
 ## Table of contents
 
 * [Changes control](#сhanges-control)
+* [Shema](#shema)
 * [Summary](#summary)
 * [Authentication and Security](#Authentication-and-Security)
 * [General considerations](#general-considerations)
@@ -15,6 +16,11 @@ Changes control
 Data | Made by | Changes
 ------------ | ------------- | -------------
 October 1, 2021 | `Yaroslav Dromov` | First version
+
+Shema
+-----
+All API access is over HTTPS, and accessed from https://fs6wjwxd00.execute-api.us-east-1.amazonaws.com. 
+All data is sent and received as JSON.
 
 Summary
 ------
