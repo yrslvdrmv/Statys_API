@@ -42,8 +42,9 @@ Security
 
 * The website making an API call identifies itself to the Marketplace by a token submitted in the API request HTTP header. The token will be provided by OMS Business Admin to the participating site owner (webmaster) for each website individually during the onboarding process. The token is valid indefinitely unless a website owner has requested a replacement or advised to be replaced by the Marketplace.
 * The website authentication: HTTP header request must have a custom parameter:
-
-	```http x-API-key=' <token provided to website>'```
+```http
+x-API-key=' <token provided to website>'
+```
 * Security requirements must be observed in every API call.
 
 
@@ -76,7 +77,7 @@ If you are interested in historical weather data, please read the "Historical we
 https://.../api/v1/websites/products
 ```
 web site authentication: HTTP header request must have a custom parameter: 
-[x-API-key=' <key given to client>']
+```[x-API-key=' <key given to client>']```
 
 #### Parameters
 
