@@ -8,7 +8,7 @@
 * [Authentication and Security](#Authentication-and-Security)
 * [General considerations](#general-considerations)
 * [Error handling](#error-hendling)
-* [Orders](#orders)
+* [API](#api)
 
 Changes control
 ---------------
@@ -65,7 +65,7 @@ Value | Description | Reference
 `500` | Forbiden | https://www.rfc-editor.org/rfc/rfc7231.html
 
 
-Orders
+API
 ---
 
 ### Create new order
