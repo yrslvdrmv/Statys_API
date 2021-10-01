@@ -4,7 +4,7 @@
 
 * [Changes control](#сhanges-control)
 * [Summary](#summary)
-* [Authentication / Security](#Authentication-Security)
+* [Authentication / Security](#Authentication-/-Security)
 * [General considerations](#general-considerations)
 * [Error handling](#error-hendling)
 * [API](#api)
