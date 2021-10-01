@@ -12,16 +12,16 @@ Data | Made by | Changes
 ------------ | ------------- | -------------
 October 1, 2021 | `Yaroslav Dromov` | Blablablablablablablablablablablablabla
 
+## Methods
 
-
-## ORDER API
+### ORDER API
 
 Below are the API methods for order processing by the Marketplace:
 
 - Create new order
 - Retrieve order status
 
-### Create new order
+#### Create new order
 
 The API for a new order requires:
 * the buyer information, 
@@ -36,7 +36,7 @@ It is assumed that before order submission, the website has identified a buyer a
 Statys Marketplace will not accept new non-paid orders, i.e., payment must be made and money received. It is possible to submit an order with payment made but not completed yet. This may happen if the payment processor requires more time. If the payment doesn't go through, the order will be declined.
 ```
 
-#### ENDPOINT:
+##### ENDPOINT:
 
 [GET:]: 
 
@@ -141,4 +141,4 @@ Property name | Value | Description
 `website_order_id` | integer | Order ID how it was created/registered on the website.
 `order_date` | timestamp | Date and time, the order was created on the website.	
 
-## Methods
+
