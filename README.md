@@ -29,25 +29,18 @@ If you are interested in historical weather data, please read the "Historical we
 ```http
 https://.../api/v1/websites/products
 ```
+web site authentication: HTTP header request must have a custom parameter: 
+[x-API-key=' <key given to client>']
 
 #### Parameters
 
-
+Parameter | Status | Description
 ------------ | ------------- | -------------
-`website_order_id` | integer | Order ID how it was created/registered on the website.
-`order_date` | timestamp | Date and time, the order was created on the website.	
-
-
-
-web site authentication: HTTP header request must have a custom parameter: 
-[x-API-key=' <key given to client>']
-	
-The API for a new order requires:
-* the buyer information, 
-* billing address 
-* shipping address, 
-* shopping basket and 
-* payment information. 
+`buyer` | required | The buyer information
+`billing_address` | required | billing address 
+`shipping_address` | required | shipping address
+`basket` | required | shopping basket
+`payment_info` | required | payment information
 
 ```
 It is assumed that before order submission, the website has identified a buyer and checked the license if the requested product requires such license in the buyer's (shipping address) jurisdiction. 
