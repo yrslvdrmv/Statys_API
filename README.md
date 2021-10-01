@@ -36,18 +36,9 @@ Security
 Error hendling
 --------------
 
-* Incorrect website key 
-   * HTTP Code 403 
-o	{"message": "Forbidden"} 
-•	Incorrect JSON structure 
-o	HTTP Code 400 
-o	{"message": "Invalid request body"} 
-•	Incorrect data 
-o	HTTP Code 400 
-o	{"message": "Invalid data"} 
-•	System failure or processing error 
-o	HTTP Code 500 
-o	{"message": "System failure"}
+Value | Description | Reference
+------------ | ------------- | -------------
+`403` | Forbiden | https://www.rfc-editor.org/rfc/rfc7231.html
 
 
 API
