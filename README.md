@@ -140,9 +140,8 @@ O |	title | string | The medical license owner title
 R |	first_name | string | The medical license owner first name
 O |	middle_name | string | The medical license owner middle name
 R |	last_name | string | The medical license owner last name
-R |	state | string | If applicable – state or another administrative region within a country like "province", "canton". *Required for the USA and Canada
-	country	string	ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-
+R |	state | string | If applicable – state or another administrative region within a country like "province", "canton". ```*Required for the USA and Canada
+	country	string	ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2```
 O |	profession	string	The license owner occupation i.e. “Medical doctor”.
 O |	specialty	string	The license owner specialty i.e. “Family doctor”.
 	The buyer address section has the same fields and requirements as the shipping address section below. It is required.
