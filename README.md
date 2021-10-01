@@ -1,8 +1,8 @@
 # Statys Marketplace website API specification
 
 - [Overview](#1-overview)
-- [Authentication](#2-authentication)
-  - [Browser-based authentication](#21-browser-based-authentication)
+- [Description](#2-description)
+  - [Create new order](#21-create-new-order)
   - [Self-issued access tokens](#22-self-issued-access-tokens)
 - [Resources](#3-resources)
   - [Users](#31-users)
