@@ -4,7 +4,7 @@
 
 * [Changes control](#сhanges-control)
 * [Summary](#summary)
-* [Authentication / Security](#Authentication-/-Security)
+* [Authentication and Security](#Authentication-and-Security)
 * [General considerations](#general-considerations)
 * [Error handling](#error-hendling)
 * [API](#api)
@@ -27,7 +27,7 @@ The current revision described below provides:
 - Retrieve parcel tracking for buyer's ALL previously submitted orders.
 - API to confirm product availability
 
-Authentication / Security
+Authentication and Security
 --------
 
 * The website making an API call identifies itself to the Marketplace by a token submitted in the API request HTTP header. The token will be provided by OMS Business Admin to the participating site owner (webmaster) for each website individually during the onboarding process. The token is valid indefinitely unless a website owner has requested a replacement or advised to be replaced by the Marketplace.
