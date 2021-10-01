@@ -1,15 +1,10 @@
 # Statys Marketplace website API specification
 
 - [Overview](#1-overview)
-- [Description](#2-description)
+- [Methods](#2-methods)
   - [Create new order](#21-create-new-order)
   - [Self-issued access tokens](#22-self-issued-access-tokens)
-- [Resources](#3-resources)
-  - [Users](#31-users)
-  - [Publications](#32-publications)
-  - [Posts](#33-posts)
-  - [Images](#34-images)
-- [Testing](#4-testing)
+
 
 ## Overview
 
