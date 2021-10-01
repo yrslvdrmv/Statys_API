@@ -17,6 +17,26 @@ Data | Made by | Changes
 ------------ | ------------- | -------------
 October 1, 2021 | `Yaroslav Dromov` | Blablablablablablablablablablablablabla
 
+## ORDER API
+
+Below are the API methods for order processing by the Marketplace:
+
+•	Create new order
+•	Retrieve order status
+
+Create new order
+
+The API for a new order requires:
+a)	the buyer information, 
+b)	billing address 
+c)	shipping address, 
+d)	shopping basket and 
+e)	payment information. 
+
+It is assumed that before order submission, the website has identified a buyer and checked the license if the requested product requires such license in the buyer's (shipping address) jurisdiction. 
+
+Statys Marketplace will not accept new non-paid orders, i.e., payment must be made and money received. It is possible to submit an order with payment made but not completed yet. This may happen if the payment processor requires more time. If the payment doesn't go through, the order will be declined.
+
 
 #### ENDPOINT:
 
