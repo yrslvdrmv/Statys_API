@@ -69,6 +69,10 @@ web site authentication: HTTP header request must have a custom parameter:
 	   }
 	]
 }
+```
+</p>
+</details>
+
 
 OUTPUT JSON Sample:
 {
@@ -105,7 +109,3 @@ OUTPUT JSON Sample:
         }
     ]
 }
-```
-
-</p>
-</details>
