@@ -81,12 +81,6 @@ HTTP header request must have a custom parameter:
 
 Parameter | Status | Description
 ------------ | ------------- | -------------
-`id` | required | key given to client
-
-#### Request param
-
-Parameter | Status | Description
------------- | ------------- | -------------
 `buyer` | required | The buyer information
 `billing_address` | required | billing address 
 `shipping_address` | required | shipping address
@@ -96,6 +90,78 @@ Parameter | Status | Description
 It is assumed that before order submission, the website has identified a buyer and checked the license if the requested product requires such license in the buyer's (shipping address) jurisdiction. 
 
 Statys Marketplace will not accept new non-paid orders, i.e., payment must be made and money received. It is possible to submit an order with payment made but not completed yet. This may happen if the payment processor requires more time. If the payment doesn't go through, the order will be declined.
+
+#### Request param
+
+```
+order_header section
+```
+R/O | Property name | Value | Description
+------------ | ------------- | ------------- | -------------
+R |	`website_order_id` | integer |	Order ID how it was created/registered on the website. 
+R |	`order_date` |	timestamp |	Date and time, the order was created on the website.
+O |	`shipping_total` | number | The total amount a website charged for shipping all items in the order.
+O |	`shipping_tax` |	number | Tax amount a website charged on shipping cost.
+O |	`cart_tax` |	number | Tax for the whole order
+R |	`total` |	number | The total cost of order items and shipping
+O |	`total_tax` | number |	Total tax charged for order items and shipping.
+O |	`prices_include_tax` |	boolean |	The grand total of the order, including taxes
+R |	`currency` |	string |	Currency code for currency an order was processed in.
+O |	`customer_note` |	string |	Any note for the order a website wants to be attached. It may have an explanation of the discount provided, special delivery instructions, etc.
+R |	`Is_paid` |	boolean |	Default to false reflecting the order payment to be captured by OMS. If the order was prepaid on the website, the value should be true. In this case the payment information object is optional;
+
+
+	discounts section
+R	discount_total	number	The total amount is given as a discount for the whole order.
+O	discount_tax	number	Taxes are matching the discount amount.
+	buyer section
+R	buyer_account_id	integer	Buyer account ID. If the buyer is brand new, set this value to 0. Buyer account ID is created on Statys side and has to be used in further inquiries. In response to the new account "0", Statys returns the account number created for this buyer. In case a "new" account is found to be existing (found by name and address), Statys returns the existing account ID.
+R	buyer_ip_address	string	An IP address a buyer contacted web site from.
+	The medical license section: optional. 
+R	license_name	string	License Name. It may be a license number.
+R	license_expiry_date	date	YYYY-MM-DD format, a date doctor's license expires
+O	title	string	The medical license owner title 
+R	first_name	string	The medical license owner first name
+O	middle_name	string	The medical license owner middle name
+R	last_name	string	The medical license owner last name
+R	state	string	If applicable – state or another administrative region within a country like "province", "canton". *Required for the USA and Canada
+R	country	string	ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+
+O	profession	string	The license owner occupation i.e. “Medical doctor”.
+O	specialty	string	The license owner specialty i.e. “Family doctor”.
+	The buyer address section has the same fields and requirements as the shipping address section below. It is required.
+	The shipping address section is required.
+O	title	text	Title abbreviation a buyer would like to be addressed: "Dr"," Mrs"," Sir".
+R	first_name	text	First name of a person indicated as shipment receiver.
+O	middle_name	text	The middle name of a person indicated as shipment receiver. It can be NULL.
+R	last_name	text	Last name of a person indicated as shipment receiver.
+O	company	text	Company name of a person indicated as shipment receiver.
+R	address_1	text	The first line of the address. It is typically building number, Street name, and suite number like "123 Some St., suite 1400".
+O	address_2	text	The second line of address if the first line is not enough. It can be NULL.
+R	city	text	City a shipment to be sent to.
+R	state	text	If applicable – state or another administrative region within a country like "province", "canton". *Required for the USA and Canada
+R	postcode	text	Postal code of shipping destination.
+R	country	char(2)	ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 
+
+R	phone_number_1	Text	First phone number of shipping destination contact in free form prefixed by country code: 
++1 416-123-4567. It can be NULL.
+O	phone_number_2	text	Second phone number of shipping destination contact in free form prefixed by country code: 
++1 416-123-4567. It can be NULL.
+R	email	text	E-mail address of a buyer. It can be NULL.
+	payment_details section is required if the is_paid flag set to FALSE.
+R	payment_transaction_id	string	Payment transaction ID returned by the payment processor.
+O	payment_method_description	string	Payment transaction details returned by the payment provider.
+R	payment_method_type	string	In the current API version, it is "CC" - credit card only.
+O	payment_token	string	Payment token returned by Payment provider masking buyer's credit card information. It may be NULL.
+Payment token allows to "pay with the Credit card used last time".
+R	Payment_mid	integer	This is the Merchant MID used by the website while processing the order payment;
+	line_items section. At least one order line must be provided.
+R	product_id	integer	Product ID as per Statys Marketplace Product List.
+R	quantity	integer	The number of units of the product.
+R	price	money	Price a unit was actually sold by the website. (Do not mix with MSRP product price!)
+R	total	money	The total price paid for the item. The total price may include a discount and not be equal quantity * price.
+O	total_tax	money	Total tax charged for the item.
+
 
 <details><summary><b>Example request:</b></summary>
 <p>
@@ -188,76 +254,7 @@ Statys Marketplace will not accept new non-paid orders, i.e., payment must be ma
 </p>
 </details>
 
-#### INPUT JSON Key fields explanation:	
 
-```
-order_header section
-```
-R/O | Property name | Value | Description
------------- | ------------- | ------------- | -------------
-R |	`website_order_id` | integer |	Order ID how it was created/registered on the website. 
-R |	`order_date` |	timestamp |	Date and time, the order was created on the website.
-O |	`shipping_total` | number | The total amount a website charged for shipping all items in the order.
-O |	`shipping_tax` |	number | Tax amount a website charged on shipping cost.
-O |	`cart_tax` |	number | Tax for the whole order
-R |	`total` |	number | The total cost of order items and shipping
-O |	`total_tax` | number |	Total tax charged for order items and shipping.
-O |	`prices_include_tax` |	boolean |	The grand total of the order, including taxes
-R |	`currency` |	string |	Currency code for currency an order was processed in.
-O |	`customer_note` |	string |	Any note for the order a website wants to be attached. It may have an explanation of the discount provided, special delivery instructions, etc.
-R |	`Is_paid` |	boolean |	Default to false reflecting the order payment to be captured by OMS. If the order was prepaid on the website, the value should be true. In this case the payment information object is optional;
-
-
-	discounts section
-R	discount_total	number	The total amount is given as a discount for the whole order.
-O	discount_tax	number	Taxes are matching the discount amount.
-	buyer section
-R	buyer_account_id	integer	Buyer account ID. If the buyer is brand new, set this value to 0. Buyer account ID is created on Statys side and has to be used in further inquiries. In response to the new account "0", Statys returns the account number created for this buyer. In case a "new" account is found to be existing (found by name and address), Statys returns the existing account ID.
-R	buyer_ip_address	string	An IP address a buyer contacted web site from.
-	The medical license section: optional. 
-R	license_name	string	License Name. It may be a license number.
-R	license_expiry_date	date	YYYY-MM-DD format, a date doctor's license expires
-O	title	string	The medical license owner title 
-R	first_name	string	The medical license owner first name
-O	middle_name	string	The medical license owner middle name
-R	last_name	string	The medical license owner last name
-R	state	string	If applicable – state or another administrative region within a country like "province", "canton". *Required for the USA and Canada
-R	country	string	ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-
-O	profession	string	The license owner occupation i.e. “Medical doctor”.
-O	specialty	string	The license owner specialty i.e. “Family doctor”.
-	The buyer address section has the same fields and requirements as the shipping address section below. It is required.
-	The shipping address section is required.
-O	title	text	Title abbreviation a buyer would like to be addressed: "Dr"," Mrs"," Sir".
-R	first_name	text	First name of a person indicated as shipment receiver.
-O	middle_name	text	The middle name of a person indicated as shipment receiver. It can be NULL.
-R	last_name	text	Last name of a person indicated as shipment receiver.
-O	company	text	Company name of a person indicated as shipment receiver.
-R	address_1	text	The first line of the address. It is typically building number, Street name, and suite number like "123 Some St., suite 1400".
-O	address_2	text	The second line of address if the first line is not enough. It can be NULL.
-R	city	text	City a shipment to be sent to.
-R	state	text	If applicable – state or another administrative region within a country like "province", "canton". *Required for the USA and Canada
-R	postcode	text	Postal code of shipping destination.
-R	country	char(2)	ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 
-
-R	phone_number_1	Text	First phone number of shipping destination contact in free form prefixed by country code: 
-+1 416-123-4567. It can be NULL.
-O	phone_number_2	text	Second phone number of shipping destination contact in free form prefixed by country code: 
-+1 416-123-4567. It can be NULL.
-R	email	text	E-mail address of a buyer. It can be NULL.
-	payment_details section is required if the is_paid flag set to FALSE.
-R	payment_transaction_id	string	Payment transaction ID returned by the payment processor.
-O	payment_method_description	string	Payment transaction details returned by the payment provider.
-R	payment_method_type	string	In the current API version, it is "CC" - credit card only.
-O	payment_token	string	Payment token returned by Payment provider masking buyer's credit card information. It may be NULL.
-Payment token allows to "pay with the Credit card used last time".
-R	Payment_mid	integer	This is the Merchant MID used by the website while processing the order payment;
-	line_items section. At least one order line must be provided.
-R	product_id	integer	Product ID as per Statys Marketplace Product List.
-R	quantity	integer	The number of units of the product.
-R	price	money	Price a unit was actually sold by the website. (Do not mix with MSRP product price!)
-R	total	money	The total price paid for the item. The total price may include a discount and not be equal quantity * price.
-O	total_tax	money	Total tax charged for the item.
 
 
 
