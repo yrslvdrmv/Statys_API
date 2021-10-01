@@ -62,28 +62,26 @@ Value | Description | Reference
 Orders
 ---
 
-Below are the API methods for order processing by the Marketplace:
-
-- Create new order
-- Retrieve order status
-
 ### Create new order
+Create a new order 
+<b>[POST]</b> 
 
 #### Auth
-
+```
+https://fs6wjwxd00.execute-api.us-east-1.amazonaws.com/test/api/v1/orders?buyer={buyer information}&billing_address={billing address}&shipping_address={shipping_address}&basket={basket}&payment_info={payment}
+```
 web site authentication: HTTP header request must have a custom parameter: 
 ```
 [x-API-key=' <key given to client>']
 ```
 
-#### API call
+#### Path param
 
-<b>[POST]</b>
-```
-https://fs6wjwxd00.execute-api.us-east-1.amazonaws.com/test/api/v1/orders?buyer={buyer information}&billing_address={billing address}&shipping_address={shipping_address}&basket={basket}&payment_info={payment}
-```
+Parameter | Status | Description
+------------ | ------------- | -------------
+`id` | required | key given to client
 
-#### Parameters
+#### Request param
 
 Parameter | Status | Description
 ------------ | ------------- | -------------
