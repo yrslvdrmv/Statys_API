@@ -6,7 +6,8 @@
 * [Summary](#summary)
 * [General considerations](#general_consideretion)
 
-## Changes control
+Changes control
+---------------
 
 Data | Made by | Changes
 ------------ | ------------- | -------------
@@ -24,7 +25,7 @@ The current revision described below provides:
 - API to confirm product availability
 
 General considerations
-======================
+----------------------
 
 ## Methods
 
