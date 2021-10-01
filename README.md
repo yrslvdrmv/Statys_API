@@ -186,7 +186,9 @@ Statys Marketplace will not accept new non-paid orders, i.e., payment must be ma
 
 #### INPUT JSON Key fields explanation:	
 
-	order_header section
+```
+order_header section
+```
 R/O | Property name | Value | Description
 ------------ | ------------- | ------------- | -------------
 R |	`website_order_id` | integer |	Order ID how it was created/registered on the website. 
