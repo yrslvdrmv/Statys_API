@@ -21,8 +21,8 @@ October 1, 2021 | `Yaroslav Dromov` | Blablablablablablablablablablablablabla
 
 Below are the API methods for order processing by the Marketplace:
 
-•	Create new order
-•	Retrieve order status
+- Create new order
+- Retrieve order status
 
 Create new order
 
