@@ -78,14 +78,13 @@ HTTP header request must have a custom parameter:
 ```
 
 #### Path param
-
-Parameter | Status | Description
------------- | ------------- | -------------
-`buyer` | required | The buyer information
-`billing_address` | required | billing address 
-`shipping_address` | required | shipping address
-`basket` | required | shopping basket
-`payment_info` | required | payment information
+```
+The buyer information, 
+Billing address 
+Shipping address, 
+Shopping basket and 
+Payment information. 
+```
 
 It is assumed that before order submission, the website has identified a buyer and checked the license if the requested product requires such license in the buyer's (shipping address) jurisdiction. 
 
