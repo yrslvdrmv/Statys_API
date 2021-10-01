@@ -169,8 +169,7 @@ R/O | Property name | Value | Description
 R |	`payment_transaction_id` | string | Payment transaction ID returned by the payment processor.
 O |	`payment_method_description` | string | Payment transaction details returned by the payment provider.
 R |	`payment_method_type` | string | In the current API version, it is "CC" - credit card only.
-O |	`payment_token` | string | Payment token returned by Payment provider masking buyer's credit card information. It may be NULL.
-Payment token allows to "pay with the Credit card used last time".
+O |	`payment_token` | string | Payment token returned by Payment provider masking buyer's credit card information. It may be NULL. Payment token allows to "pay with the Credit card used last time".
 R |	`Payment_mid` | integer | This is the Merchant MID used by the website while processing the order payment;
 ```
 line_items section. At least one order line must be provided.
