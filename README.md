@@ -5,6 +5,9 @@
 * [Changes control](#сhanges-control)
 * [Summary](#summary)
 * [General considerations](#general-considerations)
+* [Security](#security)
+* [Error handling](#error-hendling)
+* [API](#api)
 
 Changes control
 ---------------
@@ -27,7 +30,28 @@ The current revision described below provides:
 General considerations
 ----------------------
 
-## Methods
+Security
+--------
+
+Error hendling
+--------------
+
+* Incorrect website key 
+**	HTTP Code 403 
+o	{"message": "Forbidden"} 
+•	Incorrect JSON structure 
+o	HTTP Code 400 
+o	{"message": "Invalid request body"} 
+•	Incorrect data 
+o	HTTP Code 400 
+o	{"message": "Invalid data"} 
+•	System failure or processing error 
+o	HTTP Code 500 
+o	{"message": "System failure"}
+
+
+API
+---
 
 Below are the API methods for order processing by the Marketplace:
 
