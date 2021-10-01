@@ -4,7 +4,7 @@
 
 * [Changes control](#сhanges-control)
 * [Summary](#summary)
-* [General considerations](#general_consideretion)
+* [General considerations](#general_consideretions)
 
 Changes control
 ---------------
