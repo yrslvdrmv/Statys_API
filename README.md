@@ -115,3 +115,8 @@ web site authentication: HTTP header request must have a custom parameter:
     ]
 }
 ```
+	
+Property name | Value | Description
+------------ | ------------- | -------------
+`website_order_id` | integer | Order ID how it was created/registered on the website.
+`order_date` | timestamp | Date and time, the order was created on the website.	
