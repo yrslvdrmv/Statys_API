@@ -78,6 +78,7 @@ HTTP header request must have a custom parameter:
 ```
 
 #### Path param
+The API for a new order requires:
 ```
 The buyer information, 
 Billing address 
