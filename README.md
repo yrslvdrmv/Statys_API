@@ -69,6 +69,13 @@ Below are the API methods for order processing by the Marketplace:
 
 ### Create new order
 
+#### Auth
+
+web site authentication: HTTP header request must have a custom parameter: 
+```
+[x-API-key=' <key given to client>']
+```
+
 #### API call
 
 [POST]
@@ -79,13 +86,6 @@ https://fs6wjwxd00.execute-api.us-east-1.amazonaws.com/test/api/v1/orders?buyer=
 To get access to current weather, minute forecast for 1 hour, hourly forecast for 48 hours, daily forecast for 7 days and government weather alerts, please use this section of the documentation.
 
 If you are interested in historical weather data, please read the "Historical weather data" section
-
-#### API call
-```http
-https://.../api/v1/websites/products
-```
-web site authentication: HTTP header request must have a custom parameter: 
-```[x-API-key=' <key given to client>']```
 
 #### Parameters
 
