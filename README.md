@@ -1,7 +1,6 @@
 # Statys Marketplace website API specification
 
-Table of contents
-=================
+## Table of contents
 
 * [Changes control](#сhanges-control)
 * [Shema](#shema)
