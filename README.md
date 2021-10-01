@@ -14,7 +14,7 @@ Changes control
 
 Data | Made by | Changes
 ------------ | ------------- | -------------
-October 1, 2021 | `Yaroslav Dromov` | Blablablablablablablablablablablablabla
+October 1, 2021 | `Yaroslav Dromov` | First version
 
 Summary
 ------
