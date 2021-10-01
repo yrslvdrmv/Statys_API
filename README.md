@@ -21,6 +21,22 @@ Below are the API methods for order processing by the Marketplace:
 
 ### Create new order
 
+To get access to current weather, minute forecast for 1 hour, hourly forecast for 48 hours, daily forecast for 7 days and government weather alerts, please use this section of the documentation.
+
+If you are interested in historical weather data, please read the "Historical weather data" section
+
+#### API call
+```http
+https://.../api/v1/websites/products
+```
+
+#### ENDPOINT:
+
+
+
+web site authentication: HTTP header request must have a custom parameter: 
+[x-API-key=' <key given to client>']
+	
 The API for a new order requires:
 * the buyer information, 
 * billing address 
@@ -34,14 +50,7 @@ It is assumed that before order submission, the website has identified a buyer a
 Statys Marketplace will not accept new non-paid orders, i.e., payment must be made and money received. It is possible to submit an order with payment made but not completed yet. This may happen if the payment processor requires more time. If the payment doesn't go through, the order will be declined.
 ```
 
-#### ENDPOINT:
 
-[GET:]: 
-
-https://.../api/v1/websites/products
-
-web site authentication: HTTP header request must have a custom parameter: 
-[x-API-key=' <key given to client>']
 
 <details><summary><b>INPUT JSON Sample:</b></summary>
 <p>
