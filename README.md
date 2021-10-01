@@ -10,6 +10,9 @@
 * [Error handling](#error-handling)
 * [API](#api)
 	* [Create new order](#create-new-order)
+	* [Retrieve the status of the order](#retrieve-the-status-of-the-order)
+
+
 
 Changes control
 ---------------
