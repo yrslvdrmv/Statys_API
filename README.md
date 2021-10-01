@@ -163,7 +163,7 @@ R	total	money	The total price paid for the item. The total price may include a d
 O	total_tax	money	Total tax charged for the item.
 
 
-<details><summary><b>Example request:</b></summary>
+<details><summary><b>Request JSON example:</b></summary>
 <p>
 	
 ```json
@@ -211,7 +211,7 @@ O	total_tax	money	Total tax charged for the item.
 </p>
 </details>
 
-<details><summary><b>Response JSON example(request status 200):</b></summary>
+<details><summary><b>Response JSON example (request status 200):</b></summary>
 <p>
 	
 ```json
