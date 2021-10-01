@@ -145,7 +145,7 @@ Statys Marketplace will not accept new non-paid orders, i.e., payment must be ma
 </p>
 </details>
 
-<details><summary><b>OUTPUT JSON Sample:</b></summary>
+<details><summary><b>Example response 200:</b></summary>
 <p>
 	
 ```json
