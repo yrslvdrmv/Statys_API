@@ -30,7 +30,12 @@ If you are interested in historical weather data, please read the "Historical we
 https://.../api/v1/websites/products
 ```
 
-#### ENDPOINT:
+#### Parameters
+
+
+------------ | ------------- | -------------
+`website_order_id` | integer | Order ID how it was created/registered on the website.
+`order_date` | timestamp | Date and time, the order was created on the website.	
 
 
 
