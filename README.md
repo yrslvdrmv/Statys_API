@@ -156,33 +156,30 @@ O |	`company` | text | Company name of a person indicated as shipment receiver.
 R |	`address_1` | text | The first line of the address. It is typically building number, Street name, and suite number like "123 Some St., suite 1400".
 O |	`address_2` | text | The second line of address if the first line is not enough. It can be NULL.
 R |	`city	text` | City a shipment to be sent to.
-R |	`state	text` | If applicable – state or another administrative region within a country like "province", "canton". Required for the USA and Canada
-	postcode text Postal code of shipping destination.
+R |	`state	text` | If applicable – state or another administrative region within a country like "province", "canton". Required for the USA and Canada postcode text Postal code of shipping destination.
 R	`country` | char(2) | ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-R |	phone_number_1 | Text |	First phone number of shipping destination contact in free form prefixed by country code: 
-+1 416-123-4567. It can be NULL.
-O |	phone_number_2 | text | Second phone number of shipping destination contact in free form prefixed by country code: 
-+1 416-123-4567. It can be NULL.
-R |	email | text | E-mail address of a buyer. It can be NULL.
+R |	`phone_number_1` | Text |	First phone number of shipping destination contact in free form prefixed by country code: +1 416-123-4567. It can be NULL.
+O |	`phone_number_2` | text | Second phone number of shipping destination contact in free form prefixed by country code:  +1 416-123-4567. It can be NULL.
+R |	`email` | text | E-mail address of a buyer. It can be NULL.
 ```
 payment_details section is required if the is_paid flag set to FALSE.
 ```
 R/O | Property name | Value | Description
 ------------ | ------------- | ------------- | -------------
-R |	payment_transaction_id | string | Payment transaction ID returned by the payment processor.
-O |	payment_method_description | string | Payment transaction details returned by the payment provider.
-R |	payment_method_type | string | In the current API version, it is "CC" - credit card only.
-O |	payment_token | string | Payment token returned by Payment provider masking buyer's credit card information. It may be NULL.
+R |	`payment_transaction_id` | string | Payment transaction ID returned by the payment processor.
+O |	`payment_method_description` | string | Payment transaction details returned by the payment provider.
+R |	`payment_method_type` | string | In the current API version, it is "CC" - credit card only.
+O |	`payment_token` | string | Payment token returned by Payment provider masking buyer's credit card information. It may be NULL.
 Payment token allows to "pay with the Credit card used last time".
-R |	Payment_mid | integer | This is the Merchant MID used by the website while processing the order payment;
+R |	`Payment_mid` | integer | This is the Merchant MID used by the website while processing the order payment;
 ```
 line_items section. At least one order line must be provided.
 ```
-R |	product_id | integer | Product ID as per Statys Marketplace Product List.
-R |	quantity | integer | The number of units of the product.
-R |	price | money | Price a unit was actually sold by the website. (Do not mix with MSRP product price!)
-R |	total | money | The total price paid for the item. The total price may include a discount and not be equal quantity * price.
-O |	total_tax | money | Total tax charged for the item.
+R |	`product_id` | integer | Product ID as per Statys Marketplace Product List.
+R |	`quantity` | integer | The number of units of the product.
+R |	`price` | money | Price a unit was actually sold by the website. (Do not mix with MSRP product price!)
+R |	`total` | money | The total price paid for the item. The total price may include a discount and not be equal quantity * price.
+O |	`total_tax` | money | Total tax charged for the item.
 
 
 <details><summary><b>Request JSON example:</b></summary>
