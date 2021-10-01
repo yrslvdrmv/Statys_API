@@ -134,29 +134,29 @@ The medical license section: optional.
 ```
 R/O | Property name | Value | Description
 ------------ | ------------- | ------------- | -------------
-R |	license_name | string | License Name. It may be a license number.
-R |	license_expiry_date | date | YYYY-MM-DD format, a date doctor's license expires
-O |	title | string | The medical license owner title 
-R |	first_name | string | The medical license owner first name
-O |	middle_name | string | The medical license owner middle name
-R |	last_name | string | The medical license owner last name
-R |	state | string | If applicable – state or another administrative region within a country like "province", "canton". Required for the USA and Canada
-	country	string	ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-O |	profession | string | The license owner occupation i.e. “Medical doctor”.
-O |	specialty | string | The license owner specialty i.e. “Family doctor”.
+R |	`license_name` | string | License Name. It may be a license number.
+R |	`license_expiry_date` | date | YYYY-MM-DD format, a date doctor's license expires
+O |	`title` | string | The medical license owner title 
+R |	`first_name` | string | The medical license owner first name
+O |	`middle_name` | string | The medical license owner middle name
+R |	`last_name` | string | The medical license owner last name
+R |	`state` | string | If applicable – state or another administrative region within a country like "province", "canton". Required for the USA and Canada
+	country string ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+O |	`profession` | string | The license owner occupation i.e. “Medical doctor”.
+O |	`specialty` | string | The license owner specialty i.e. “Family doctor”.
 	The buyer address section has the same fields and requirements as the shipping address section below. It is required.
 	The shipping address section is required.
-O |	title | text | Title abbreviation a buyer would like to be addressed: "Dr"," Mrs"," Sir".
-R |	first_name | text	First name of a person indicated as shipment receiver.
-O |	middle_name | text	The middle name of a person indicated as shipment receiver. It can be NULL.
-R |	last_name | text	Last name of a person indicated as shipment receiver.
-O |	company | text	Company name of a person indicated as shipment receiver.
-R |	address_1 | text	The first line of the address. It is typically building number, Street name, and suite number like "123 Some St., suite 1400".
-O |	address_2	text	The second line of address if the first line is not enough. It can be NULL.
-R |	city	text	City a shipment to be sent to.
-R |	state	text	If applicable – state or another administrative region within a country like "province", "canton". Required for the USA and Canada
-	postcode	text	Postal code of shipping destination.
-R	country	char(2)	ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+O |	`title` | text | Title abbreviation a buyer would like to be addressed: "Dr"," Mrs"," Sir".
+R |	`first_name` | text |	First name of a person indicated as shipment receiver.
+O |	`middle_name` | text |	The middle name of a person indicated as shipment receiver. It can be NULL.
+R |	`last_name` | text | Last name of a person indicated as shipment receiver.
+O |	`company` | text | Company name of a person indicated as shipment receiver.
+R |	`address_1` | text | The first line of the address. It is typically building number, Street name, and suite number like "123 Some St., suite 1400".
+O |	`address_2` | text | The second line of address if the first line is not enough. It can be NULL.
+R |	`city	text` | City a shipment to be sent to.
+R |	`state	text` | If applicable – state or another administrative region within a country like "province", "canton". Required for the USA and Canada
+	`postcode` | text | Postal code of shipping destination.
+R	`country` | char(2) | ISO 2-char Country code of shipping destination. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
 R |	phone_number_1	Text	First phone number of shipping destination contact in free form prefixed by country code: 
 +1 416-123-4567. It can be NULL.
