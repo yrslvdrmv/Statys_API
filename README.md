@@ -24,7 +24,7 @@ Below are the API methods for order processing by the Marketplace:
 - Create new order
 - Retrieve order status
 
-Create new order
+### Create new order
 
 The API for a new order requires:
 a)	the buyer information, 
