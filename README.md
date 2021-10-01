@@ -1,16 +1,27 @@
 # Statys Marketplace website API specification
 
-- [Overview](#1-overview)
-- [Methods](#2-methods)
-  - [Create new order](#21-create-new-order)
-  - [Self-issued access tokens](#22-self-issued-access-tokens)
+## Table of contents
 
+* [Changes control](#сhanges-control)
 
-## Overview
+Changes control
+==============
 
 Data | Made by | Changes
 ------------ | ------------- | -------------
 October 1, 2021 | `Yaroslav Dromov` | Blablablablablablablablablablablablabla
+
+## Summary
+
+The document describes how a website can integrate with the Statys Business services marketplace. The API provides integration capability for new or existing websites to add Statys Business services products to their catalog and submit orders to and check order status from the Statys Order Management System (OMS).
+
+The current revision described below provides:  
+- The endpoint to obtain the product list along with availability and the current MSRP price for a given website;
+- The endpoint for the website order submission;
+- Retrieve parcel tracking for buyer's ALL previously submitted orders.
+- API to confirm product availability
+
+## General considerations
 
 ## Methods
 
