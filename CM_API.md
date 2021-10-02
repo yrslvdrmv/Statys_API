@@ -1,7 +1,7 @@
 1. Partial search
 
 
-# | API | User | Description
+№ | API | User | Description
 ------------ | ------------- | ------------- | -------------
 1 |	`Get product (partial search)` | BM, WHM |	User type several letters into search bar. System returns: Parant product names in drop down list.
 2 |	`Get product (full search)` |	BM, WHM |	User type several letters into search bar and press Enter or select product from search drop down list. System returns: Parent product name, number of variants, status in search result frame.
