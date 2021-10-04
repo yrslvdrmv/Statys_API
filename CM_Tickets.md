@@ -6,9 +6,9 @@ Products:
 № | API method | Role | User input | System output
 ------------ | ------------- | ------------- | ------------- | -------------
 1 |	`Partial product search BM` | BM, WHM |	Partial or full parent product name | `Product name`
-2 |	`Full product search BM` |	BM, WHM |	Partial or full parent product name + Enter | `Product name`, sum(`Product ID`), `Product status`
+2 |	`Full product search BM` |	BM, WHM |	Partial or full parent product name + show all status | `Product name`, sum(`Product ID`), `Product status`
 3|	`Partial product search WHM` | BM, WHM |	Partial or full parent product name | `Product name`
-4 |	`Full product search WHM` |	BM, WHM |	Partial or full parent product name + Enter | `Product name`, sum(`Product ID`), `Product status`
+4 |	`Full product search WHM` |	BM, WHM |	Partial or full parent product name + show all status | `Product name`, sum(`Product ID`), `Product status`
 5 | `Get product info` |	BM, WHM | `Product name`, `Warehouse ID` | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details`
 6 |	`Add new product` |	BM | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details` | -
 7 | `Update product` |	BM | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details`	| -
