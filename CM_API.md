@@ -9,8 +9,8 @@
 5 | `Get variants` |	BM, WHM |	- | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
 6 | `Get product info` |	BM | - | ...
 7 | `Update product` |	BM |	|
-8 | `Get variants info` |	BM, WHM |	- |
-9 | `Get variants pricing` |	BM, WHM | -	|
+8 | `Get variant info` |	BM, WHM |	- |
+9 | `Get variant pricing` |	BM, WHM | -	|
 10 | `Update variants` |	BM, WHM |	|
 11 | `Update product status` | BM |	`isPublished` | -
 12 | `Update variant status` | BM |	|
@@ -37,7 +37,14 @@ Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Manage
 13. **System** call `Get variants` API method [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10862)
 14. **User** press [Add product button](https://user-images.githubusercontent.com/73137432/135837018-72427440-d43f-4685-9051-d93774551e2d.png)
 15. **System** call `Add new product` API method and move to [Add new product page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11865)
+16. **User** switch [Variant status toggle](https://user-images.githubusercontent.com/73137432/135833166-f4de8c8e-3a8a-40d0-8b7b-2622693a7f24.png)
+17. **System** call `Update variant status` API method
 
+8. **User** press [Edit variant button](https://user-images.githubusercontent.com/73137432/135839534-cbac8be1-52d8-4cfa-8041-18787a3ec31f.png)
+9. **System** call `Get variant info` API method and move to [Edit variant page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=699%3A21720)
+
+variant edit
+variant status
 
 
 
