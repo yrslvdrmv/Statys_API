@@ -29,6 +29,7 @@ Variants:
 
 ## Ticket 1. As a BM user, I want to search parant products (UI)
 Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333) board for the page design
+Follow the [API specification](https://github.com/yrslvdrmv/Statys_API/blob/d25a1b63dc01693621d1d30f28f1771a775c8497/CM_API_Specification.md)
 ### Acceptance criteria:
 1. **User** on the [Home search page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333)
 2. **User** type one or several letters into [search bar](https://user-images.githubusercontent.com/73137432/135811153-9693454b-27b5-422a-8b17-1ca08e0ebc87.png) 
@@ -55,8 +56,8 @@ Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Manage
 
 
 ## Ticker 2. As a WHM user, I want to search parant products (UI)
-
 Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333) board for the page design
+Follow the [API specification](https://github.com/yrslvdrmv/Statys_API/blob/d25a1b63dc01693621d1d30f28f1771a775c8497/CM_API_Specification.md)
 ### Acceptance criteria:
 1. **User** on the [Home search page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333)
 2. **User** type one or several letters into [search bar](https://user-images.githubusercontent.com/73137432/135811153-9693454b-27b5-422a-8b17-1ca08e0ebc87.png) 
