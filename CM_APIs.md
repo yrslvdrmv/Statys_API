@@ -6,7 +6,7 @@
 
 Endpoint (production):
 
-POST:
+[POST]:
 ```
 https://.../api/v1/products/search
 ```
