@@ -30,7 +30,7 @@ Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Manage
 3. **System** call `Get product (partial search)` API method. In case of `Show active only checkbox`([UI](https://user-images.githubusercontent.com/73137432/135830700-fb21f7cc-2b08-4f7f-936b-a6720db2b3bd.png)) is activated, **System** call `Get product (partial search status published)` API method
 4. **User** type one or several letters into search bar and press `Enter` button on keyboard 
 5. **System** call `Get product (full search)` [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10768). In case of `Show active only checkbox`([UI](https://user-images.githubusercontent.com/73137432/135830700-fb21f7cc-2b08-4f7f-936b-a6720db2b3bd.png)) is activated, **System** call `Get product (full search status published)` API method
-11. **User** select status toggle
+11. **User** select product status toggle
 12. **System** call `Update product status`
 
 
