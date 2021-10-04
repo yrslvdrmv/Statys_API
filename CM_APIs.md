@@ -9,10 +9,11 @@ Endpoint (production):
 POST: https://.../api/v1/products/search
 
 JSON Input
-
+```JSON
 {
   "product_name": ""
 }
+```
 
 JSON Output
 
