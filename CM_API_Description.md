@@ -9,15 +9,7 @@
 * [General considerations](#general-considerations)
 * [Error handling](#error-handling)
 * [API](#api)
-	* [Create new order](#create-new-order)
-	* [Retrieve the status of the order](#retrieve-the-status-of-the-order)
-	* [Confirm product availability](#confirm-product-availability)
-	* [Merchant ID](#merchant_id)
-	* [Payment methods](#payment_methods)
-
-
-
-
+	* [Get product (partial search)](#Get-product-(partial-search))
 
 * [Appendix 1](#apendix_1)
 
@@ -79,7 +71,7 @@ Value | Description | Reference
 API
 ===
 
-Create new order
+Get product (partial search)
 ----------------
 <b>[POST]</b> 
 ```
