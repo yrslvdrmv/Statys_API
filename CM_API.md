@@ -24,5 +24,5 @@ Follow the [Figma](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Man
 1. User on the [page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333)
 2. User type one or several letters into search bar [example](https://user-images.githubusercontent.com/73137432/135811153-9693454b-27b5-422a-8b17-1ca08e0ebc87.png). Call `partial search API method`
 4. System returns list of `parent product names` in drop down list, according to users input, once user typed at least one letter
-5. System hide drop down list and returns list of `parent product names` with `number of variants`, `status`, in search result frame in case of user press `enter` button [example](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10768). Call `full search API method`
+5. System hide drop down list and returns list of `parent product names` with `number of variants`, `status`, in search result frame, in case of user press `enter` button [example](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10768). Call `full search API method`
 6. System filter 
