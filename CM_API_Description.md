@@ -9,7 +9,7 @@
 * [General considerations](#general-considerations)
 * [Error handling](#error-handling)
 * [API](#api)
-	* [Get product (partial search)](#Get-product-(partial-search))
+	* [Get product (partial search)](#Get-product-partial-search)
 
 * [Appendix 1](#apendix_1)
 
