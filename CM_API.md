@@ -18,7 +18,7 @@ UI
 11 |	`Update variant status` |	BM |	
 
 
-## 1,2. As a BM user, I want to search parant products (UI)
+## As a BM user, I want to search parant products (UI)
 Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333) board for the page design
 ### Acceptance criteria:
 1. **User** on the [page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333)
@@ -26,3 +26,8 @@ Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Manage
 4. **System** call `partial search API method` and returns list of `parent product names` in drop down list
 5. In case of **User** press `enter` button, **System** call `full search API method` and returns list of `parent product names`, total `number of variants`, `status` in search result frame [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10768)
 6. **System** filter 
+
+
+
+
+## As a WHM user, I want to search parant products (UI)
