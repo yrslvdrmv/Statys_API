@@ -10,14 +10,15 @@ Brief API description
 4 |	`Get product (full search status published)` |	BM, WHM | Partial or full parent product name + `Show active only checkbox` = 1 + Enter | `Product name`, sum(`Product ID`), `Published status` where `Published status` = 1
 5 | `Get variants` |	BM, WHM |	`Product name` | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
 6 | `Get product info` |	BM | `Product name` | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details`
-7 | `Update product` |	BM | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details`	| -
-8 | `Get variant info` |	BM, WHM |	`Variant name` | `Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight`
-9 | `Get variant pricing` |	BM, WHM | `Variant name`	|
-10 | `Update variant` |	BM, WHM |	`Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight` | -
-11 | `Update product status` | BM |	`Product published status` | -
-12 | `Update variant status` | BM |	`Variant published status`| -
-13 |	`Add new product` |	BM | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details` | -
-14 |	`Add new variant` |	BM, WHM |	`Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight` | -
+7 | `Get variant info` |	BM, WHM |	`Variant name` | `Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight`
+8 | `Get variant pricing` |	BM, WHM | `Variant name`	|
+9 |	`Add new product` |	BM | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details` | -
+10 |	`Add new variant` |	BM, WHM |	`Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight` | -
+11 | `Update product` |	BM | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details`	| -
+12 | `Update variant` |	BM, WHM |	`Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight` | -
+13 | `Update product status` | BM |	`Product published status` | -
+14 | `Update variant status` | BM |	`Variant published status`| -
+
 
 
 
