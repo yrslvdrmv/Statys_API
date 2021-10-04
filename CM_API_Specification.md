@@ -92,7 +92,7 @@ Get product (partial search)
 <b>[GET]</b> 
 Endpoint:
 ```
-https://fs6wjwxd00.execute-api.us-east-1.amazonaws.com/test/api/v1/orders?buyer={buyer information}&billing_address={billing address}&shipping_address={shipping_address}&basket={basket}&payment_info={payment}
+https://fs6wjwxd00.execute-api.us-east-1.amazonaws.com/test/api/v1/productName={payment}
 ```
 
 Get list of existing products.
