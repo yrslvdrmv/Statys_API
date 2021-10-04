@@ -1,7 +1,4 @@
-```
-Brief API description
-```
-
+## Brief API description
 
 ```
 Products:
