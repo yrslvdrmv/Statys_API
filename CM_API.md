@@ -18,4 +18,6 @@ UI
 11 |	`Update variant status` |	BM |	
 
 
-## Acceptance criteria
+## Title
+### Acceptance criteria
+### Description
