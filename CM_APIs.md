@@ -6,7 +6,10 @@
 
 Endpoint (production):
 
-POST: https://.../api/v1/products/search
+POST:
+```
+https://.../api/v1/products/search
+```
 
 JSON Input
 ```JSON
