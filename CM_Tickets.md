@@ -33,7 +33,7 @@ Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Manage
 7. **System** call `Update product status` API method
 8. **User** press [Edit product button](https://user-images.githubusercontent.com/73137432/135833794-12e656ec-3513-4a1e-ba42-a618089ce5ca.png)
 9. **System** call `Get product info` API method and move to [Edit product page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=743%3A21512)
-10. **User** press [Add variant button](https://user-images.githubusercontent.com/73137432/135834938-f94ca0fd-b4be-46a2-97f0-ad00fa73e00c.png) **'CREATE' SHOULD BE CHANGED ON 'ADD'**
+10. **User** press [Add variant button](https://user-images.githubusercontent.com/73137432/135834938-f94ca0fd-b4be-46a2-97f0-ad00fa73e00c.png) **'IN BUTTON NAME CREATE' SHOULD BE CHANGED ON 'ADD'**
 11. **System** call `Add new variant` API method and move to [Add product varian page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A12074)
 12. **User** press [Get variants button](https://user-images.githubusercontent.com/73137432/135835514-d2cff86e-eb2c-405c-9f36-b156eb3fd515.png)
 13. **System** call `Get variants` API method [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10862)
