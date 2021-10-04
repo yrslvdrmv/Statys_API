@@ -19,10 +19,10 @@ UI
 
 
 ## 1,2. As a BM user, I want to search parant products (UI)
-Follow the [Figma](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333) board for the page design
+Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333) board for the page design
 ### Acceptance criteria:
 1. **User** on the [page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333)
-2. **User** type one or several letters into search bar [example](https://user-images.githubusercontent.com/73137432/135811153-9693454b-27b5-422a-8b17-1ca08e0ebc87.png) 
+2. **User** type one or several letters into search bar [UI](https://user-images.githubusercontent.com/73137432/135811153-9693454b-27b5-422a-8b17-1ca08e0ebc87.png) 
 4. **System** call `partial search API method` and returns list of `parent product names` in drop down list
-5. In case of **User** press `enter` button, **System** call `full search API method` and returns list of `parent product names`, total `number of variants`, `status` in search result frame [example](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10768)
+5. In case of **User** press `enter` button, **System** call `full search API method` and returns list of `parent product names`, total `number of variants`, `status` in search result frame [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10768)
 6. **System** filter 
