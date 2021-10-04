@@ -7,7 +7,7 @@ UI
 ------------ | ------------- | ------------- | ------------- | -------------
 1 |	`Get product (partial search)` | BM, WHM |	Partial or full parent product name | `productName`
 2 |	`Get product (full search)` |	BM, WHM |	Partial or full parent product name + Enter | `productName`, sum(`productID`), `isPublished`
-3 |	`Get product (partial search filter status)` | BM, WHM |	Partial or full parent product name + `Show active only checkbox` activated |  `productName`, `isPublished`=1
+3 |	`Get product (partial search filter status)` | BM, WHM |	Partial or full parent product name + `Show active only checkbox` activated |  `productName` where `isPublished`=1
 4 |	`Get product (full search filter status)` |	BM, WHM |	Partial or full parent product name + Enter | Parent product name, number of variants, status in search result frame.
 5 | `Get variants` |	BM, WHM |	|
 6 | `Get product info` |	BM |	|
