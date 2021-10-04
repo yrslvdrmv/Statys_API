@@ -30,4 +30,4 @@ Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Manage
 
 
 
-## As a WHM user, I want to search parant products (UI)
+## Ticker 2. As a WHM user, I want to search parant products (UI)
