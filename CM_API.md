@@ -21,6 +21,11 @@ UI
 ## As a BM user, I want to search parant products (UI)
 ### Acceptance criteria:
 1. User on the [page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333)
-2. User type one or several letters into search bar https://prnt.sc/1uq1r1p
-3. System returns list of `parent product names` in drop down list, according to users input, once user typed at least one letter. (link on UI example)
-4. System hide drop down list and return list of `parent product names`, `number of variants`, `status`, in search result frame in case of user press enter button.
+2. User type one or several letters into search bar
+<details><summary><b>Example:</b></summary>
+<p>
+![изображение](https://user-images.githubusercontent.com/73137432/135811153-9693454b-27b5-422a-8b17-1ca08e0ebc87.png)
+</p>
+</details>
+4. System returns list of `parent product names` in drop down list, according to users input, once user typed at least one letter. (link on UI example)
+5. System hide drop down list and return list of `parent product names`, `number of variants`, `status`, in search result frame in case of user press enter button.
