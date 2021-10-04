@@ -5,7 +5,7 @@ UI
 
 № | API method | Role | User input | System output
 ------------ | ------------- | ------------- | ------------- | -------------
-1 |	`Get product (partial search)` | BM, WHM |	Partial or full parent product name | List of related `Parent product names`
+1 |	`Get product (partial search)` | BM, WHM |	Partial or full parent product name | List of related `productName`
 2 |	`Get product (full search)` |	BM, WHM |	Partial or full parent product name + Enter | Parent product name, number of variants, status in search result frame.
 3 |	`Get product (partial search filter status)` | BM, WHM |	Partial or full parent product name | List of related `Parent product names`
 4 |	`Get product (full search filter status)` |	BM, WHM |	Partial or full parent product name + Enter | Parent product name, number of variants, status in search result frame.
