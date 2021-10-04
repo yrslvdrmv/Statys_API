@@ -5,10 +5,10 @@ Products:
 ```
 № | API method | Role | User input | System output
 ------------ | ------------- | ------------- | ------------- | -------------
-1 |	`Get product (partial search)` | BM, WHM |	Partial or full parent product name | `Product name`
-2 |	`Get product (full search)` |	BM, WHM |	Partial or full parent product name + Enter | `Product name`, sum(`Product ID`), `Product status`
-3 |	`Get product (partial search status published)` | BM, WHM |	Partial or full parent product name + `Show active only checkbox` = 1 |  `Product name` where published status = 1
-4 |	`Get product (full search status published)` |	BM, WHM | Partial or full parent product name + `Show active only checkbox` = 1 + Enter | `Product name`, sum(`Product ID`), `Published status` where `Published status` = 1
+1 |	`Partial product search` | BM, WHM |	Partial or full parent product name | `Product name`
+2 |	`Full product search` |	BM, WHM |	Partial or full parent product name + Enter | `Product name`, sum(`Product ID`), `Product status`
+3 |	`Partial product search status published` | BM, WHM |	Partial or full parent product name + `Show active only checkbox` = 1 |  `Product name` where published status = 1
+4 |	`Full product search status published` |	BM, WHM | Partial or full parent product name + `Show active only checkbox` = 1 + Enter | `Product name`, sum(`Product ID`), `Published status` where `Published status` = 1
 5 | `Get product info` |	BM, WHM | `Product name`, `Warehouse ID` | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details`
 6 |	`Add new product` |	BM | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details` | -
 7 | `Update product` |	BM | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details`	| -
@@ -33,9 +33,9 @@ Variants:
 ### Acceptance criteria:
 1. **User** on the [Home search page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333)
 2. **User** type one or several letters into [search bar](https://user-images.githubusercontent.com/73137432/135811153-9693454b-27b5-422a-8b17-1ca08e0ebc87.png) 
-3. **System** call `Get product (partial search)` API method. In case of [Show active only checkbox](https://user-images.githubusercontent.com/73137432/135830700-fb21f7cc-2b08-4f7f-936b-a6720db2b3bd.png) is activated, **System** call `Get product (partial search status published)` API method
+3. **System** call `Partial product search` API method. In case of [Show active only checkbox](https://user-images.githubusercontent.com/73137432/135830700-fb21f7cc-2b08-4f7f-936b-a6720db2b3bd.png) is activated, **System** call `Partial product search status published` API method
 4. **User** type one or several letters into search bar and press `Enter` button on keyboard 
-5. **System** call `Get product (full search)` [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10768). In case of [Show active only checkbox](https://user-images.githubusercontent.com/73137432/135830700-fb21f7cc-2b08-4f7f-936b-a6720db2b3bd.png) is activated, **System** call `Get product (full search status published)` API method
+5. **System** call `Full product search` [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10768). In case of [Show active only checkbox](https://user-images.githubusercontent.com/73137432/135830700-fb21f7cc-2b08-4f7f-936b-a6720db2b3bd.png) is activated, **System** call `Full product search status published` API method
 6. **User** switch [Product status toggle](https://user-images.githubusercontent.com/73137432/135833166-f4de8c8e-3a8a-40d0-8b7b-2622693a7f24.png)
 7. **System** call `Update product status` API method
 8. **User** press [Edit product button](https://user-images.githubusercontent.com/73137432/135833794-12e656ec-3513-4a1e-ba42-a618089ce5ca.png)
