@@ -22,7 +22,7 @@ Variants:
 ------------ | ------------- | ------------- | ------------- | -------------
 1 | `Get variants` |	BM, WHM |	`Product name` | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
 2 | `Get variant info` |	BM, WHM |	`Variant name` | `Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight`
-3 | `Get variant pricing` |	BM, WHM | `Variant name`	|
+3 | `Get variant pricing` |	BM, WHM | `Variant name`	| `Region`, `Licence`, `Currency`, `MSRP Price`, `Minimum sales price`, `Tier 1 quantity`, `Tier 2 quantity`, `Tier 3 quantity`, `Tier 4 quantity`, `Tier 5 quantity`, `Tier 1 price`, `Tier 2 price`, `Tier 3 price`, `Tier 4 price`, `Tier 5 price`
 4 |	`Add new variant` |	BM, WHM |	`Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight` | -
 5 | `Update variant` |	BM, WHM |	`Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight` | -
 6 | `Update variant status` | BM |	`Variant published status`| -
