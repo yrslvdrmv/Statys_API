@@ -89,7 +89,7 @@ Get product (partial search)
 <details><summary><b>details:</b></summary>
 <p>
 
-<b>[GET]</b> 
+<b>[POST]</b> 
 Endpoint:
 ```
 https://.../api/v1/products/search
@@ -130,43 +130,7 @@ R | `productParent.productName` | string | Full or partial name
 	
 ```json
 {
-"products":
-  [
-    {
-      "product_data": 
-          {
-          "product_id": {"type": "integer"},
-          "product_name": {"type": "string", "maxlength": 128},
-          "product_short_description": {"type": "string", "maxlength": 512},
-          "product_long_description": {"type": "string", "maxlength": 1024},
-          "product_sku": {"type": "string", "maxlength": 128},
-          "product_weight": {"type": "number"},
-          "product_weight_uom": {"type": "string", "maxlength": 32},
-          "product_length": {"type": "number"},
-          "product_width": {"type": "number"},
-          "product_height": {"type": "number"},
-          "product_lwh_uom": {"type": "string","maxlength": 32},
-          "dosage_value": {"type": "string", "maxlength": 256},
-          "dosage_type": {"type": "string", "maxlength": 32},
-          "items_in_pack": {"type": "string", "maxlength": 128},
-          "pack_type": {"type": "string", "maxlength": 32},
-          "brand_name": {"type": "string", "maxlength": 32}
-          }
-      "product_category": 
- 		  {
-			"is_cold": {"type": "boolean"},
-			"type": {"type": "string", "maxlength": 32} /"pharma"|"med_device"/
-		  },
-   "msrp_price_and_availability": 
-
- 		  {
-			"availability": {"type": "string", "maxlength": 32} /"Backorder"|"Low"|"Medium"|"High"/
-			"msrp_price": {"type": "number"},
-			"currency": {"type": "string", "maxlength": 3}, /"USD"/
-			"is_license_required": {"type": "boolean"}  
-		  }
-	   }
-	]
+  "product_name": ""
 }
 ```
 	
