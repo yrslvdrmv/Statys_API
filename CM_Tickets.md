@@ -1,4 +1,6 @@
-
+```
+Brief API description
+```
 
 № | API method | Role | User input | System output
 ------------ | ------------- | ------------- | ------------- | -------------
