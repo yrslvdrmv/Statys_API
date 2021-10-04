@@ -79,7 +79,7 @@ Endpoint:
 https://fs6wjwxd00.execute-api.us-east-1.amazonaws.com/test/api/v1/orders?buyer={buyer information}&billing_address={billing address}&shipping_address={shipping_address}&basket={basket}&payment_info={payment}
 ```
 
-Publishes an order in system. 
+Get list of existing products.
 
 #### Auth
 
