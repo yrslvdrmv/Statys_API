@@ -3,7 +3,7 @@ UI
 ```
 
 
-№ | API | User | User input | System output
+№ | API method | User | User input | System output
 ------------ | ------------- | ------------- | ------------- | -------------
 1 |	`Get parent product (partial search)` | BM, WHM |	Partial or full parent product name | List of related `Parent product names`
 2 |	`Get parent product (full search)` |	BM, WHM |	Partial or full parent product name + Enter | Parent product name, number of variants, status in search result frame.
