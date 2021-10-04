@@ -16,3 +16,6 @@ UI
 9 |	`Update variant` |	BM |	
 10 |	`Update product status` |	BM |	
 11 |	`Update variant status` |	BM |	
+
+
+## Acceptance criteria
