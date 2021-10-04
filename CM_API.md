@@ -18,7 +18,7 @@ UI
 11 | `Update variant status` |	BM |	
 
 
-## As a BM user, I want to search parant products (UI)
+## Ticket 1. As a BM user, I want to search parant products (UI)
 Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333) board for the page design
 ### Acceptance criteria:
 1. **User** on the [page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333)
