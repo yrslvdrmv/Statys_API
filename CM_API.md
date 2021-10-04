@@ -2,11 +2,11 @@
 
 № | API method | Role | User input | System output
 ------------ | ------------- | ------------- | ------------- | -------------
-1 |	`Get product (partial search)` | BM, WHM |	Partial or full parent product name | `productName`
-2 |	`Get product (full search)` |	BM, WHM |	Partial or full parent product name + Enter | `productName`, sum(`productID`), `isPublished`
+1 |	`Get product (partial search)` | BM, WHM |	Partial or full parent product name | `Product name`
+2 |	`Get product (full search)` |	BM, WHM |	Partial or full parent product name + Enter | `Product name`, sum(`Product ID`), `Product status`
 3 |	`Get product (partial search status published)` | BM, WHM |	Partial or full parent product name + `Show active only checkbox` = 1 |  `productName` where `isPublished`=1
 4 |	`Get product (full search status published)` |	BM, WHM | Partial or full parent product name + `Show active only checkbox` = 1 + Enter | `productName`, sum(`productID`), `isPublished` having `isPublished`=1
-5 | `Get variants` |	BM, WHM |	- | `productName`
+5 | `Get variants` |	BM, WHM |	- | `Variant name`, SKU, Version, MSRP
 6 | `Get product info` |	BM | - | ...
 7 | `Update product` |	BM |	|
 8 | `Get variants info` |	BM, WHM |	- |
@@ -38,6 +38,7 @@ Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Manage
 14. **User** press [Add product button](https://user-images.githubusercontent.com/73137432/135837018-72427440-d43f-4685-9051-d93774551e2d.png)
 15. **System** call `Add new product` API method and move to [Add new product page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11865)
 
+`[Add new product page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11865)`
 
 
 
