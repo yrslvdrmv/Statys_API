@@ -19,5 +19,5 @@ UI
 
 
 ## Title
-### Acceptance criteria
-### Description
+### Acceptance criteria:
+### Description:
