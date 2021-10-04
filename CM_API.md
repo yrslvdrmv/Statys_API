@@ -13,7 +13,7 @@ UI
 6 |	`Add product` |	BM |	
 7 |	`Add variants` |	BM, WHM |	
 8 |	`Update product` |	BM |	
-9 |	`Update variant` |	BM |	
+9 |	`Update variant` |	BM, WHM |	
 10 | `Update product status` |	BM |	
 11 | `Update variant status` |	BM |	
 
