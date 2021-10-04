@@ -14,8 +14,8 @@
 10 | `Update variants` |	BM, WHM |	|
 11 | `Update product status` | BM |	`isPublished` | -
 12 | `Update variant status` | BM |	|
-13 |	`Create new product` |	BM | -|
-14 |	`Create new variant` |	BM, WHM |	- |
+13 |	`Add new product` |	BM | -|
+14 |	`Add new variant` |	BM, WHM |	- |
 
 
 
@@ -36,7 +36,7 @@ Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Manage
 12. **User** press [List of variants button](https://user-images.githubusercontent.com/73137432/135835514-d2cff86e-eb2c-405c-9f36-b156eb3fd515.png)
 13. **System** call `Create new variant` API method [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10862)
 14. **User** press [Add product button](https://user-images.githubusercontent.com/73137432/135837018-72427440-d43f-4685-9051-d93774551e2d.png)
-15. **System** call `Create new product` API method and move to [Add new product page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11865)
+15. **System** call `Add new product` API method and move to [Add new product page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11865)
 
 
 
