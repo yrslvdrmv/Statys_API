@@ -1,2 +1,62 @@
 1. Create an API method product/search to call by the CM UI to get product search results based on the product name entered by a user;
 2. The method input parameter is the product_name;
+3. Define the Warehouses this WHM user belongs to. Get the UserID from the Cognito token in the header request. 
+4. For this userID verify the role of the user in the table field User.role. If not WHM, return the 422 code and the exception “Access denied: the wrong user role“;
+
+Then get the list of Warehouses this WHM role user belongs to. Loop the table WarehouseOperator.WarehouseID using the WarehouseOperator.UserID value. If there is no record returned, return the 422 code and the exception “Access denied for the user“. Find the Warehouse.WarehouseName by WarehouseIDs.
+
+The method returns to the UI the list of the products matching the partial search condition to the method’s input.
+
+Return only products having Product.productUnavailable flag equal to 0.
+
+The method should return "record_count" as the total number of record returned;
+
+The method return is the array of the matched product records along with their attributes:
+
+product_id from Product.ProductID;
+
+product_name from Product.productName;
+
+product_dosage_value from Product.dosageValue;
+
+product_dosage_type from Product.dosageType;
+
+product_items_in_pack from Product.itemsInPack;
+
+product_pack_type from Product.packType;
+
+is_cold from Product.IsCold;
+
+total_available from a sum of WarehouseBatchInventory.freeStock for the given WarehouseInventory.ProductID->WarehouseBatchInventory.WarehouseInventoryID ONLY for the WarehouseInventory.WarehouseID->Warehouse.WarehouseName found in the 3.b the eligible user (WHM role only) belongs to. If no record found in the ProductBatch table, return “N/A”;
+
+Order output by the smallest "total_available" value. The records with “N/A“ are going the last;
+
+Endpoint (production):
+
+POST: https://.../api/v1/products/search
+
+JSON Input
+
+{
+  "product_name": ""
+}
+
+JSON Output
+
+{
+    "record_count": 100,
+    "product_records":
+        [
+            {
+			"product_id": 1,
+			"product_name": "",
+			"product_dosage_value": "",
+			"product_dosage_type": "",
+			"product_items_in_pack": "",
+			"product_pack_type": "",
+			"is_cold": true,
+			"total_available": 200
+			}
+		]
+}
+
