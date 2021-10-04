@@ -86,6 +86,9 @@ API
 
 Get product (partial search)
 ----------------
+<details><summary><b>### TRY</b></summary>
+<p>
+
 <b>[GET]</b> 
 Endpoint:
 ```
@@ -302,6 +305,9 @@ This version of API does not have order adjustment or cancellation endpoints. Af
     ]
 }
 ```
+</p>
+</details>
+	
 </p>
 </details>
 
