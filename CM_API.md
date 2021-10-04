@@ -35,6 +35,7 @@ Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Manage
 
 Creat variant
 Add product
+List of variants
 
 
 
