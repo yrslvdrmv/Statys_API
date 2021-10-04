@@ -6,7 +6,7 @@ Brief API description
 ------------ | ------------- | ------------- | ------------- | -------------
 1 |	`Get product (partial search)` | BM, WHM |	Partial or full parent product name | `Product name`
 2 |	`Get product (full search)` |	BM, WHM |	Partial or full parent product name + Enter | `Product name`, sum(`Product ID`), `Product status`
-3 |	`Get product (partial search status published)` | BM, WHM |	Partial or full parent product name + `Show active only checkbox` = 1 |  `productName` where `isPublished`=1
+3 |	`Get product (partial search status published)` | BM, WHM |	Partial or full parent product name + `Show active only checkbox` = 1 |  `Product name` where published status = 1
 4 |	`Get product (full search status published)` |	BM, WHM | Partial or full parent product name + `Show active only checkbox` = 1 + Enter | `productName`, sum(`productID`), `isPublished` having `isPublished`=1
 5 | `Get variants` |	BM, WHM |	- | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
 6 | `Get product info` |	BM | - | ...
