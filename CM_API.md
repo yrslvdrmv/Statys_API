@@ -9,12 +9,12 @@ UI
 2 |	`Get product (full search)` |	BM, WHM |	Partial or full parent product name + Enter | Parent product name, number of variants, status in search result frame.
 3 |	`Get product (partial search filter status)` | BM, WHM |	Partial or full parent product name | List of related `Parent product names`
 4 |	`Get product (full search filter status)` |	BM, WHM |	Partial or full parent product name + Enter | Parent product name, number of variants, status in search result frame.
-5 | `Get variants` |	BM |	|
+5 | `Get variants` |	BM, WHM |	|
 6 | `Get product info` |	BM |	|
 7 | `Update product` |	BM |	|
-8 | `Get variants info` |	BM |	|
-9 | `Get variants pricing` |	BM |	|
-10 | `Update variants` |	BM |	|
+8 | `Get variants info` |	BM, WHM |	|
+9 | `Get variants pricing` |	BM, WHM |	|
+10 | `Update variants` |	BM, WHM |	|
 11 | `Update product status` | BM |	|
 12 | `Update variant status` | BM |	|
 13 |	`Add new product` |	BM |	|
