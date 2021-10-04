@@ -34,8 +34,9 @@ JSON Output
     "product_records":
         [
             {
-			 "product_name": ""
-			}
-		]
+             "product_id": ""
+	     "product_name": ""
+	    }
+	]
 }
 ```
