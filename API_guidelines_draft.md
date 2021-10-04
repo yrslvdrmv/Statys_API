@@ -132,15 +132,15 @@ discounts section
 ```
 R/O | Property name | Value | Description
 ------------ | ------------- | ------------- | -------------
-R |	discount_total | number | The total amount is given as a discount for the whole order.
-O |	discount_tax | number | Taxes are matching the discount amount.
+R |	`discount_total` | number | The total amount is given as a discount for the whole order.
+O |	`discount_tax` | number | Taxes are matching the discount amount.
 ```
 buyer section
 ```
 R/O | Property name | Value | Description
 ------------ | ------------- | ------------- | -------------
-R |	buyer_account_id | integer | Buyer account ID. If the buyer is brand new, set this value to 0. Buyer account ID is created on Statys side and has to be used in further inquiries. In response to the new account "0", Statys returns the account number created for this buyer. In case a "new" account is found to be existing (found by name and address), Statys returns the existing account ID.
-R | buyer_ip_address | string | An IP address a buyer contacted web site from.
+R |	`buyer_account_id` | integer | Buyer account ID. If the buyer is brand new, set this value to 0. Buyer account ID is created on Statys side and has to be used in further inquiries. In response to the new account "0", Statys returns the account number created for this buyer. In case a "new" account is found to be existing (found by name and address), Statys returns the existing account ID.
+R | `buyer_ip_address` | string | An IP address a buyer contacted web site from.
 ```
 The medical license section: optional.
 ```
