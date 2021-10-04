@@ -121,7 +121,7 @@ order_header section
 ```
 R/O | Property name | Value | Description
 ------------ | ------------- | ------------- | -------------
-R |	`productParent.productName` | string |	Full or partial
+R | `productParent.productName` | string | Full or partial name
 
 
 
