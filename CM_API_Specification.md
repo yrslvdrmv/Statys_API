@@ -105,13 +105,9 @@ HTTP header request must have a custom parameter:
 ```
 
 #### Path param
-The API for a new order requires:
+The API for a partial search requires:
 ```
-The buyer information
-Billing address 
-Shipping address
-Shopping basket and 
-Payment information
+Full or partial parent product name
 ```
 
 It is assumed that before order submission, the website has identified a buyer and checked the license if the requested product requires such license in the buyer's (shipping address) jurisdiction. 
