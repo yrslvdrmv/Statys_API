@@ -12,7 +12,7 @@
 8 | `Get variants info` |	BM, WHM |	|
 9 | `Get variants pricing` |	BM, WHM |	|
 10 | `Update variants` |	BM, WHM |	|
-11 | `Update product status` | BM |	|
+11 | `Update product status` | BM |	`isPublished` | -
 12 | `Update variant status` | BM |	|
 13 |	`Add new product` |	BM |	|
 14 |	`Add new variant` |	BM, WHM |	|
