@@ -1,6 +1,3 @@
-```
-UI
-```
 
 
 № | API method | Role | User input | System output
