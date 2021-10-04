@@ -8,8 +8,8 @@ Brief API description
 2 |	`Get product (full search)` |	BM, WHM |	Partial or full parent product name + Enter | `Product name`, sum(`Product ID`), `Product status`
 3 |	`Get product (partial search status published)` | BM, WHM |	Partial or full parent product name + `Show active only checkbox` = 1 |  `Product name` where published status = 1
 4 |	`Get product (full search status published)` |	BM, WHM | Partial or full parent product name + `Show active only checkbox` = 1 + Enter | `Product name`, sum(`Product ID`), `Published status` where `Published status` = 1
-5 | `Get variants` |	BM, WHM |	- | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
-6 | `Get product info` |	BM | - | ...
+5 | `Get variants` |	BM, WHM |	`Product name` | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
+6 | `Get product info` |	BM | `Product name` | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details`
 7 | `Update product` |	BM |	|
 8 | `Get variant info` |	BM, WHM |	- |
 9 | `Get variant pricing` |	BM, WHM | -	|
