@@ -10,6 +10,19 @@
 * [Error handling](#error-handling)
 * [API](#api)
 	* [Get product (partial search)](#Get-product-partial-search)
+	* [Get product (full search)](#Get-product-full-search)
+	* [Get product (partial search status published)](#Get-product-partial-search-status-published)
+	* [Get product (full search status published)](#Get-product-full-search-status-published)
+	* [Get product info](#Get-product-info)
+	* [Add new product](#Add-new-product)
+	* [Update product](#Update-product)
+	* [Update product status](#Update-product-status)
+	* [Get variants](#Get-variants)
+	* [Get variant info](#Get-variant-info)
+	* [Get variant pricing](#Get-variant-pricing)
+	* [Add new variant](#Add-new-variant)
+	* [Update variant](#Update-variant)
+	* [Update variant status](#Update-variant-status)
 
 * [Appendix 1](#apendix_1)
 
@@ -18,7 +31,7 @@ Changes control
 
 Data | Made by | Changes
 ------------ | ------------- | -------------
-October 1, 2021 | `Yaroslav Dromov` | First version
+October 4, 2021 | `Yaroslav Dromov` | First edition
 
 Shema
 -----
@@ -28,7 +41,7 @@ All data is sent and received as JSON.
 Summary
 ------
 
-The document describes how a website can integrate with the Statys Business services marketplace. The API provides integration capability for new or existing websites to add Statys Business services products to their catalog and submit orders to and check order status from the Statys Order Management System (OMS).
+The document describes how Catalog Managment module can integrate with the Statys Business services marketplace. The API provides integration capability for new or existing websites to add Statys Business services products to their catalog, check product statuse
 
 The current revision described below provides:  
 - The endpoint to obtain the product list along with availability and the current MSRP price for a given website;
