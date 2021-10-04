@@ -29,7 +29,6 @@ Variants:
 
 ## Ticket 1. As a BM user, I want to search parant products (UI)
 #### Follow the [UI board](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333) for the page design
-#### Follow the [API specification](https://github.com/yrslvdrmv/Statys_API/blob/d25a1b63dc01693621d1d30f28f1771a775c8497/CM_API_Specification.md)
 
 ### Acceptance criteria:
 1. **User** on the [Home search page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333)
@@ -58,7 +57,6 @@ Variants:
 
 ## Ticker 2. As a WHM user, I want to search parant products (UI)
 #### Follow the [UI board](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333) for the page design
-#### Follow the [API specification](https://github.com/yrslvdrmv/Statys_API/blob/d25a1b63dc01693621d1d30f28f1771a775c8497/CM_API_Specification.md)
 
 ### Acceptance criteria:
 1. **User** on the [Home search page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333)
