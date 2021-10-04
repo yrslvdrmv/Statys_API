@@ -6,7 +6,7 @@
 2 |	`Get product (full search)` |	BM, WHM |	Partial or full parent product name + Enter | `productName`, sum(`productID`), `isPublished`
 3 |	`Get product (partial search status published)` | BM, WHM |	Partial or full parent product name + `Show active only checkbox` = 1 |  `productName` where `isPublished`=1
 4 |	`Get product (full search status published)` |	BM, WHM | Partial or full parent product name + `Show active only checkbox` = 1 + Enter | `productName`, sum(`productID`), `isPublished` where `isPublished`=1
-5 | `Get variants` |	BM, WHM |	|
+5 | `Get variants` |	BM, WHM |	- |
 6 | `Get product info` |	BM | - | ...
 7 | `Update product` |	BM |	|
 8 | `Get variants info` |	BM, WHM |	|
