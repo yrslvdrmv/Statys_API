@@ -33,7 +33,7 @@ Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Manage
 6. **System** call `Get product (full search)` [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10768)
 7. In case of **User** activate `Show active only checkbox`, **System** call `Get product (full search filter status)`
 8. **User** select status toggle
-9. **System call 
+9. **System call** `Update product status`
 
 
 
