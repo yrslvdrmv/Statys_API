@@ -42,9 +42,6 @@ Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Manage
 18. **User** press [Edit variant button](https://user-images.githubusercontent.com/73137432/135839534-cbac8be1-52d8-4cfa-8041-18787a3ec31f.png)
 19. **System** call `Get variant info` API method and move to [Edit variant page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=699%3A21720)
 
-variant edit
-variant status
-
 
 
 
