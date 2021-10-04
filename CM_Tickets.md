@@ -55,7 +55,7 @@ Variants:
 
 
 
-## Ticker 2. As a WHM user, I want to search parant products (UI)
+## Ticket 2. As a WHM user, I want to search parant products (UI)
 #### Follow the [UI board](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333) for the page design
 
 ### Acceptance criteria:
