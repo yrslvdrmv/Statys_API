@@ -18,6 +18,9 @@ UI
 11 |	`Update variant status` |	BM |	
 
 
-## Title
+## As a BM user, I want to search parant products (UI)
 ### Acceptance criteria:
-### Description:
+1. User on the (link on UI example) page
+2. User type one or several letters into search bar (link on UI example)
+3. System returns list of `parent product names` in drop down list, according to users input, once user typed at least one letter. (link on UI example)
+4. System hide drop down list and return list of `parent product names`, `number of variants`, `status`, in search result frame in case of user press enter button.
