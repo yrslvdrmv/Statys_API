@@ -24,10 +24,10 @@ UI
 Follow the [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333) board for the page design
 ### Acceptance criteria:
 1. **User** on the [page](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333)
-2. **User** type one or several letters into search bar [UI](https://user-images.githubusercontent.com/73137432/135811153-9693454b-27b5-422a-8b17-1ca08e0ebc87.png) 
+2. **User** type one or several letters into search bar [UI](https://user-images.githubusercontent.com/73137432/135811153-9693454b-27b5-422a-8b17-1ca08e0ebc87.png). In case of **User** activated: Show active only checkbox, **System** calls `Get product (partial search filter status)`
 4. **System** call `Get product (partial search)` API method
-5. In case of **User** press `enter` button, **System** call `full search API method` [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10768)
-6. In case of **User** select Show active only checkbox, **System** call `full search API method` and filter
+5. In case of **User** press `enter` button, **System** calls `full search API method` [UI](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A10768)
+6. 
 
 
 
