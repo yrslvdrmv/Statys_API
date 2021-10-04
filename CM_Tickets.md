@@ -4,7 +4,7 @@ Brief API description
 
 
 ```
-Product
+Products:
 ```
 № | API method | Role | User input | System output
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Product
 
 
 ```
-Variants
+Variants:
 ```
 № | API method | Role | User input | System output
 ------------ | ------------- | ------------- | ------------- | -------------
