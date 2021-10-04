@@ -1,4 +1,4 @@
-# Statys Marketplace website API specification
+# Catalog managment website API specification
 
 ## Table of contents
 
