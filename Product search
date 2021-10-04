@@ -1,0 +1,2 @@
+1. Create an API method product/search to call by the CM UI to get product search results based on the product name entered by a user;
+2. The method input parameter is the product_name;
