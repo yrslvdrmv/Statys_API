@@ -9,12 +9,11 @@
 5 | `Update product` |	BM | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details`	| -
 6 | `Update product status` | BM |	`Product published status` | -
 7 | `Get variants` |	BM, WHM |	`Product name` | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
-8 | `Get variants` |	BM, WHM |	`Product name` | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
-9 | `Get variant info` |	BM, WHM |	`Variant name` | `Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight`
-10 | `Get variant pricing` |	BM, WHM | `Variant name`	| `Region`, `Licence`, `Currency`, `MSRP Price`, `Minimum sales price`, `Tier 1 quantity`, `Tier 2 quantity`, `Tier 3 quantity`, `Tier 4 quantity`, `Tier 5 quantity`, `Tier 1 price`, `Tier 2 price`, `Tier 3 price`, `Tier 4 price`, `Tier 5 price`
-11 |	`Add new variant` |	BM, WHM |	`Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight` | -
-12 | `Update variant` |	BM, WHM |	`Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight` | -
-13 | `Update variant status` | BM |	`Variant published status`| -
+8 | `Get variant info` |	BM, WHM |	`Variant name` | `Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight`
+9 | `Get variant pricing` |	BM, WHM | `Variant name`	| `Region`, `Licence`, `Currency`, `MSRP Price`, `Minimum sales price`, `Tier 1 quantity`, `Tier 2 quantity`, `Tier 3 quantity`, `Tier 4 quantity`, `Tier 5 quantity`, `Tier 1 price`, `Tier 2 price`, `Tier 3 price`, `Tier 4 price`, `Tier 5 price`
+10 |	`Add new variant` |	BM, WHM |	`Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight` | -
+11 | `Update variant` |	BM, WHM |	`Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight` | -
+12 | `Update variant status` | BM |	`Variant published status`| -
 
 ## Ticket 1. As a BM user, I want to search parant products (UI)
 #### Follow the [UI board](https://www.figma.com/file/8esK6SC43J6ioZCIuj2hJr/Catalog-Management?node-id=389%3A11333) for the page design
