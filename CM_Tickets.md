@@ -3,13 +3,13 @@
 № | API method | Role | User input | System output
 ------------ | ------------- | ------------- | ------------- | -------------
 1 |	`Partial search` | BM, WHM |	Partial or full parent product name | `Product name`
-2 |	`Full search WHM` |	BM, WHM |	Partial or full parent product name + show all status | `Product name`, sum(`Product ID`), `Product status`
+2 |	`Full search` |	BM, WHM |	Partial or full parent product name + show all status | `Product name`, sum(`Product ID`), `Product status`
 3 | `Get product info` |	BM, WHM | `Product name`, `Warehouse ID` | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details`
 4 |	`Add new product` |	BM | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details` | -
 5 | `Update product` |	BM | `Product name`, `Catalog category`, `Long description`, `Brand name`, `Manufacturer`, `Version`, `HS Code`, `Cooling status`, `Temperature details`	| -
 6 | `Update product status` | BM |	`Product published status` | -
-7 | `Get variants BM` |	BM, WHM |	`Product name` | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
-8 | `Get variants WHM` |	BM, WHM |	`Product name` | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
+7 | `Get variants` |	BM, WHM |	`Product name` | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
+8 | `Get variants` |	BM, WHM |	`Product name` | `Variant name`, `SKU`, `Version`, `MSRP`, `Status`
 9 | `Get variant info` |	BM, WHM |	`Variant name` | `Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight`
 10 | `Get variant pricing` |	BM, WHM | `Variant name`	| `Region`, `Licence`, `Currency`, `MSRP Price`, `Minimum sales price`, `Tier 1 quantity`, `Tier 2 quantity`, `Tier 3 quantity`, `Tier 4 quantity`, `Tier 5 quantity`, `Tier 1 price`, `Tier 2 price`, `Tier 3 price`, `Tier 4 price`, `Tier 5 price`
 11 |	`Add new variant` |	BM, WHM |	`Short description`, `SKU`, `Strength`, `Manufacturer product URL`, `Country of origin`, `Long description`, `inch`, `ounce`, `Units in the box`, `Lenght`, `Width`, `Hight`, `Package weight` | -
