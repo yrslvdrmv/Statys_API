@@ -1,5 +1,6 @@
 ```json
-{  
+{
+    "$id": "",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "put variant model",
     "type": "object",
